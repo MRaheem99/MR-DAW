@@ -775,8 +775,8 @@ async function loadLibraryUI(libPopup, container, sampleList, onSelect) {
     if (cachedSampleFiles) {
         libraryData = cachedSampleFiles;
     } else {
-        response = await fetch('./samples.json');
-        libraryData = await response.json();
+        const res = await fetch('./samples.json');
+        libraryData = await res.json();
         cachedSampleFiles =  libraryData;
     }
 
