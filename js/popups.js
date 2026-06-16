@@ -847,7 +847,7 @@ async function loadLibraryUI(libPopup, container, sampleList, onSelect) {
                 row.className = 'library-item sample-row';
                 row.textContent = item.name;
                 
-                const fullPath = './' + item.path;
+                const fullPath = item.path;
 
                 const spinner = document.createElement("div");
                 spinner.style.position = "absolute";
@@ -971,7 +971,7 @@ async function loadLibraryUI(libPopup, container, sampleList, onSelect) {
                         row.className = 'library-item sample-row';
                         row.textContent = item.name;
                         
-                        const fullPath = './' + item.path;
+                        const fullPath = item.path;
 
                         const spinner = document.createElement("div");
                         spinner.style.position = "absolute";
