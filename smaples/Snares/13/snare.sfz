@@ -1,0 +1,47 @@
+<group>
+key=38
+loop_mode=one_shot
+volume=-4
+hivel=25
+<region> sample=snare_p.wav
+<group>
+key=38
+seq_length=2
+loop_mode=one_shot
+volume=-4
+lovel=26
+<region> sample=snare_mp1.wav hivel=50
+<region> sample=snare_mp2.wav seq_position=2 hivel=50
+<region> sample=snare_mf1.wav lovel=51 hivel=77
+<region> sample=snare_mf2.wav seq_position=2 lovel=51 hivel=77
+<group>
+key=38
+seq_length=3
+loop_mode=one_shot
+volume=-4
+lovel=78
+<region> sample=snare_f1.wav lovel=78 hivel=103
+<region> sample=snare_f2.wav seq_position=2 lovel=78 hivel=103
+<region> sample=snare_f3.wav seq_position=3 lovel=78 hivel=103
+<region> sample=snare_ff1.wav lovel=104
+<region> sample=snare_ff2.wav seq_position=2 lovel=104
+<region> sample=snare_ff3.wav seq_position=3 lovel=104
+
+<group>
+key=40
+seq_length=2
+loop_mode=one_shot
+<region> sample=rimshot_p1.wav hivel=63
+<region> sample=rimshot_p2.wav seq_position=2 hivel=63
+<region> sample=rimshot_f1.wav lovel=64
+<region> sample=rimshot_f2.wav seq_position=2 lovel=64
+
+<group>
+key=37
+seq_length=2
+volume=-4
+loop_mode=one_shot
+<region> sample=sstick_p1.wav hivel=63
+<region> sample=sstick_p2.wav seq_position=2 hivel=63
+<region> sample=sstick_f1.wav lovel=64
+<region> sample=sstick_f2.wav seq_position=2 lovel=64
