@@ -33,10 +33,7 @@ function openEqualizerpanel(track){
         content: eqRow,
         width: '360px',
         height: '350px',
-        onClose: () => {
-        //   document.querySelector('#custBtn_' + track.trackId)?.classList.remove('active');
-        // stopPreview(); // if needed
-        }
+        onClose: () => {}
     });
 }
 
@@ -250,95 +247,62 @@ function openTrackReverbPopup(track) {
     typeRow.className = 'popup-row';
 
     const typeLabel = document.createElement('div');
-typeLabel.textContent = 'Type';
-
-const typeSelect = document.createElement('select');
-typeSelect.id = `reverbType_${track.trackId}`;
-
-// Default placeholder option
-const option1 = document.createElement('option');
-option1.value = '';
-option1.selected = true;
-option1.hidden = true;
-option1.textContent = 'Select Reverb Type';
-typeSelect.appendChild(option1);
-
-let cachedIRFiles = null;
-// Fetch dynamic IR list from PHP
-async function loadIRFilesIntoSelect() {
+    typeLabel.textContent = 'Type';
     
-    if (cachedIRFiles) {
-        populateSelect(cachedIRFiles);
-        return;
-    }
-    try {
-        const response = await fetch('./list_ir.php');
-        if (!response.ok) throw new Error('Failed to fetch IR list');
-
-        const data = await response.json();
-
-        if (data.status !== 'success') {
-            console.error('Error from PHP:', data);
+    const typeSelect = document.createElement('select');
+    typeSelect.id = `reverbType_${track.trackId}`;
+    
+    const option1 = document.createElement('option');
+    option1.value = '';
+    option1.selected = true;
+    option1.hidden = true;
+    option1.textContent = 'Select Reverb Type';
+    typeSelect.appendChild(option1);
+    
+    let cachedIRFiles = null;
+    async function loadIRFilesIntoSelect() {
+        if (cachedIRFiles) {
+            populateSelect(cachedIRFiles);
             return;
         }
-
-        // Populate select with fetched files
-        //data.files.forEach(file => {
-        //    const option = document.createElement('option');
-        //    option.value = './ir/'+file.url;
-        //    option.textContent = file.name;
-        //    typeSelect.appendChild(option);
-        //});
-        
-        cachedIRFiles = data.files;
-        populateSelect(cachedIRFiles);
-
-        // Optional: set default value if needed
-        // typeSelect.value = './ir/hall.wav';
-
-    } catch (err) {
-        console.error('Failed to load IR files:', err);
-
-        // Fallback to hardcoded list if PHP fails
-        const fallbackFiles = [
-            'corner.wav', 'hall.wav', 'nice_drum_room.wav', /* ... your old list ... */
-        ];
-        fallbackFiles.forEach(file => {
-            const cleanName = file
-                .replace(/\.wav$/i, '')
-                .replace(/[_-]/g, ' ')
-                .replace(/(\d+)/g, ' $1')
-                .trim()
-                .replace(/\b\w/g, c => c.toUpperCase());
-
-            const option = document.createElement('option');
-            option.value = `./ir/${file}`;
-            option.textContent = cleanName;
-            typeSelect.appendChild(option);
-        });
-    }
+        try {
+            const response = await fetch('./list_ir.json');
+            if (!response.ok) throw new Error('Failed to fetch IR list');
+            const data = await response.json();
+            cachedIRFiles = data.files;
+            populateSelect(cachedIRFiles);
+        } catch (err) {
+            console.error('Failed to load IR files:', err);
     
-    function populateSelect(files) {
-        files.forEach(file => {
-            const option = document.createElement('option');
-            option.value = './ir/'+file.url;
-            option.textContent = file.name;
-            typeSelect.appendChild(option);
-        });
+            const fallbackFiles = ['corner.wav', 'hall.wav', 'nice_drum_room.wav'];
+            
+            fallbackFiles.forEach(file => {
+                const cleanName = file
+                    .replace(/\.wav$/i, '')
+                    .replace(/[_-]/g, ' ')
+                    .replace(/(\d+)/g, ' $1')
+                    .trim()
+                    .replace(/\b\w/g, c => c.toUpperCase());
+    
+                const option = document.createElement('option');
+                option.value = `./ir/${file}`;
+                option.textContent = cleanName;
+                typeSelect.appendChild(option);
+            });
+        }
+    
+        function populateSelect(files) {
+            files.forEach(file => {
+                const option = document.createElement('option');
+                option.value = './ir/'+file.url;
+                option.textContent = file.name;
+                typeSelect.appendChild(option);
+            });
+        }
     }
-}
 
-// Load files immediately
 loadIRFilesIntoSelect();
-
-// Optional: sort alphabetically
-// typeSelect.innerHTML = Array.from(typeSelect.options)
-//   .sort((a, b) => a.textContent.localeCompare(b.textContent))
-//   .map(opt => opt.outerHTML)
-//   .join('');
-
     typeSelect.value = r.type;
-
     typeSelect.onchange = () => {
         r.type = typeSelect.value;
         loadTrackReverbIR(track, r.type);
@@ -437,9 +401,6 @@ loadIRFilesIntoSelect();
     });
 }
 
-// ──────────────────────────────────────────────
-// Advanced Euclidean Sequencer Panel
-// ──────────────────────────────────────────────
 function openEuclideanSequencer(track) {
     const popupId = track.id+'_euseq';
     const title = 'Euclidean Sequencer';
@@ -451,7 +412,6 @@ function openEuclideanSequencer(track) {
     euclidContainer.style.borderRadius = '10px';
     euclidContainer.style.maxWidth = '420px';
 
-    // Title
     const titleDiv = document.createElement('div');
     titleDiv.innerHTML = '<strong>'+title+'</strong>';
     titleDiv.style.textAlign = 'center';
@@ -459,13 +419,11 @@ function openEuclideanSequencer(track) {
     titleDiv.style.fontSize = '1.1em';
     euclidContainer.appendChild(titleDiv);
 
-    // Controls grid
     const grid = document.createElement('div');
     grid.style.display = 'grid';
     grid.style.gridTemplateColumns = '1fr 1fr';
     grid.style.gap = '10px';
 
-    // Inputs
     const stepsInput = createSmallInput('Steps', 16, 4, 64);
     const hitsInput = createSmallInput('Hits', 4, 1, 16);
     const rotationInput = createSmallInput('Rotation', 0, 0, 63);
@@ -478,7 +436,6 @@ function openEuclideanSequencer(track) {
         accentInput.div
     );
 
-    // Preset selector
     const presetDiv = document.createElement('div');
     presetDiv.style.gridColumn = '1 / -1';
     const presetSelect = document.createElement('select');
@@ -493,7 +450,6 @@ function openEuclideanSequencer(track) {
     `;
     presetDiv.appendChild(presetSelect);
 
-    // Preview grid
     const preview = document.createElement('div');
     preview.style.gridColumn = '1 / -1';
     preview.style.height = '60px';
@@ -506,7 +462,6 @@ function openEuclideanSequencer(track) {
     preview.style.overflow = 'hidden';
     preview.innerHTML = '<div style="color:#666">Preview will appear here</div>';
 
-    // Buttons row
     const btnRow = document.createElement('div');
     btnRow.style.gridColumn = '1 / -1';
     btnRow.style.display = 'flex';
@@ -535,7 +490,6 @@ function openEuclideanSequencer(track) {
         btnRow
     );
 
-    // ─── Logic ──────────────────────────────────────
     function generateEuclidean(steps, hits, rotation = 0) {
         if (hits === 0) return new Array(steps).fill(false);
         if (hits >= steps) return new Array(steps).fill(true);
@@ -578,7 +532,6 @@ function openEuclideanSequencer(track) {
         preview.appendChild(gridPrev);
     }
 
-    // Events
     [stepsInput.input, hitsInput.input, rotationInput.input].forEach(inp => {
         inp.addEventListener('input', updatePreview);
     });
@@ -605,10 +558,8 @@ function openEuclideanSequencer(track) {
         const steps = parseInt(stepsInput.input.value) || 16;
         const hits = parseInt(hitsInput.input.value) || 4;
         const rot = parseInt(rotationInput.input.value) || 0;
-
         const pattern = generateEuclidean(steps, hits, rot);
 
-        // Apply to track steps (adjust range if needed)
         for (let i = 0; i < Math.min(steps, track.steps.length); i++) {
             track.steps[i] = pattern[i];
         }
@@ -627,7 +578,6 @@ function openEuclideanSequencer(track) {
         updatePreview();
     };
 
-    // Optional: Save preset to localStorage
     savePresetBtn.onclick = () => {
         const preset = {
             steps: stepsInput.input.value,
@@ -638,7 +588,6 @@ function openEuclideanSequencer(track) {
         alert("Preset saved!");
     };
 
-    // Load last preset if exists
     const saved = localStorage.getItem('lastEuclidPreset');
     if (saved) {
         try {
