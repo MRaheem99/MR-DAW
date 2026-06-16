@@ -311,6 +311,7 @@ async function loadDrumPresets() {
 
 async function loadSampleBuffer(url) {
     const response = await fetch(url);
+   console.log("Loaded sample: " + url);
     const arrayBuffer = await response.arrayBuffer();
     return await audioContext.decodeAudioData(arrayBuffer);
 }
