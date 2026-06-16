@@ -55,6 +55,54 @@ MR DAW is a modern HTML5 music workstation featuring a real-time synthesizer, pi
 * Pattern playback
 * Loop sequencing
 
+* ## Euclidean Sequencer
+
+This project includes a powerful built-in **Euclidean Sequencer** for generating complex rhythmic patterns with minimal input.
+
+The Euclidean rhythm algorithm distributes pulses as evenly as possible across a number of steps, creating natural and musical groove patterns commonly used in:
+
+* Techno
+* IDM
+* Afrobeat
+* Ambient
+* Experimental electronic music
+
+### Features
+
+* Adjustable steps and pulses
+* Pattern rotation
+* Real-time BPM sync
+* Swing support
+* Per-track sequencing
+* Drum pad integration
+* Live playback updates
+* Multi-bar sequencing
+* Independent track timing
+* Browser-based low latency scheduling
+
+### Example
+
+```js
+generateEuclidean(16,5)
+```
+
+Output:
+
+```text
+x . . x . . x . x . . x . . x .
+```
+
+This creates a 5-hit rhythm distributed evenly across 16 steps.
+
+### Use Cases
+
+* Drum grooves
+* Hi-hat patterns
+* Percussion layers
+* Bassline triggering
+* Polyrhythms
+* Experimental timing structures
+
 ### Sample Engine
 
 * WAV / MP3 / OGG support
@@ -93,6 +141,7 @@ https://mraheem99.github.io/MR-DAW/
 * JavaScript
 * Web Audio API
 * Canvas API
+* The Euclidean sequencer is implemented entirely in JavaScript using the Web Audio API scheduling engine for accurate browser-based timing and low-latency playback.
 * GitHub Pages
 
 ---
