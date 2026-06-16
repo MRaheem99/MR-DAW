@@ -1,5 +1,3 @@
-//instruments.js
-
 function midiToNoteName(midi) {
     if (typeof midi !== 'number') return '';
     const name = NOTE_NAMES[midi % 12];
@@ -354,15 +352,12 @@ function createSynthVoices(track, note, startTime, freq, duration, velocity = 1)
         const osc = ctx.createOscillator();
         osc.type = synth.oscType;
 
-        const det =
-            detune +
-            (i - (unison - 1) / 2) * spread;
+        const det = detune + (i - (unison - 1) / 2) * spread;
 
         osc.detune.value = det;
         
         const baseFreq = midiToFreq(note.pitch ?? 60);
 
-        //osc.frequency.setValueAtTime(baseFreq, startTime);
         applyPitchEnvelope(
             osc.frequency,
             freq,
@@ -591,7 +586,6 @@ function generateRandomDrumPattern(tracks, bars = 1, genre = "techno") {
     const safeBars = Number.isFinite(bars) && bars > 0 ? bars : 2;
     const totalSteps = safeResolution * safeBars;
 
-    // ─── Genre Profiles ────────────────────────────────────────────────
     const genreSettings = {
         techno: {
             kick: { density: 0.98, onBeat: [0, 8], ghostChance: 0.03 },
@@ -697,7 +691,6 @@ function generateRandomDrumPattern(tracks, bars = 1, genre = "techno") {
 
     const profile = genreSettings[genre] || genreSettings["techno"];
 
-    // ─── Pattern Generation ─────────────────────────────────────────────
     const pattern = {
         resolution: safeResolution,
         lengthBars: safeBars,
@@ -717,41 +710,33 @@ function generateRandomDrumPattern(tracks, bars = 1, genre = "techno") {
             const beatPos = i % safeResolution;
             let probability = p.density || 0.3;
 
-            // Specific beat placements
             if (p.onBeat && p.onBeat.includes(beatPos)) {
                 probability = 1;
             }
 
-            // Half-time feel (dubstep, drumstep)
             if (p.halfTime && beatPos % 8 !== 0 && beatPos % 8 !== 4) {
                 probability *= 0.2;
             }
 
-            // Triplet feel
             if (p.tripletHihat && name.includes("hat") && beatPos % 4 === 2) {
                 probability *= 0.7;
             }
 
-            // Ghost notes
             if (Math.random() < (p.ghostChance || 0)) {
                 probability *= 0.35;
             }
 
-            // Swing (probability shift)
             if (p.swing && beatPos % 2 === 1) {
                 probability *= (1 - p.swing * 0.6);
             }
 
-            // Final hit decision + velocity
             if (Math.random() < probability) {
                 let velocity = 100;
 
-                // Accent
                 if (p.accentEvery && i % p.accentEvery === 0) {
                     velocity = 127;
                 }
 
-                // Low velocity for lofi
                 if (p.lowVelocity) {
                     velocity = Math.floor(60 + Math.random() * 40);
                 }
@@ -766,7 +751,6 @@ function generateRandomDrumPattern(tracks, bars = 1, genre = "techno") {
     return pattern;
 }
 
-// Helper to match track name to profile
 function getProfileForName(name, profile) {
     if (name.includes("kick")) return profile.kick || {};
     if (name.includes("snare") || name.includes("clap")) return profile.snare || profile.clap || {};
@@ -779,7 +763,6 @@ function getProfileForName(name, profile) {
     return { density: 0.25 };
 }
 
-// Helper to match track name to genre profile
 function getProfileForName(name, genreProfile) {
     if (name.includes("kick")) return genreProfile.kick || {};
     if (name.includes("snare") || name.includes("clap")) return genreProfile.snare || {};
@@ -801,25 +784,18 @@ function savePatternsToStorage() {
 }
 
 function saveCurrentPattern(name, pattern, patternList) {
-
     if (!name) return;
-
     DRUM_PATTERNS[name] = pattern;
-
     savePatternsToStorage();
-
     refreshPatternListUI(patternList);
 }
 
 function refreshPatternListUI(cont) {
         const containerPatterns = document.querySelector('.pattern-list');
-    
         const container = cont || containerPatterns;
-
         container.innerHTML = "";
     
         Object.keys(DRUM_PATTERNS).forEach(name => {
-    
             const row = document.createElement("div");
             row.className = "pattern-row";
             row.style.borderRadius = "5px";
@@ -888,11 +864,8 @@ function insertDrumPatternAtPlayhead(pattern) {
         if (!patternSteps) return;
 
         patternSteps.forEach((v, i) => {
-
             const targetStep = startStep + i;
-
             if (targetStep < targetTrack.steps.length) {
-
                 targetTrack.steps[targetStep] = v
                     ? { active: true, velocity: 1 }
                     : false;
@@ -905,7 +878,6 @@ function insertDrumPatternAtPlayhead(pattern) {
 
 
 function previewDrumPattern(pattern) {
-
     const bpm = getBPM();
     const secondsPerStep = getSecondsPerStep();
 
@@ -965,12 +937,8 @@ async function renderCurrentDrumKitToWav(bars = 1) {
     }
 
     const patternSteps = lastStepIndex + 1;
-
-    const safetyTail = 0; //0.05;
-
-    //const duration = (patternSteps * secondsPerStep) + safetyTail;
+    const safetyTail = 0;
     const duration = resolution * bars * secondsPerStep;
-
     const offlineCtx = new OfflineAudioContext(
         2,
         Math.ceil(duration * sampleRate),
@@ -981,7 +949,6 @@ async function renderCurrentDrumKitToWav(bars = 1) {
 
 
     drumTracks.forEach(track => {
-
         const chain = createFullOfflineTrackChain(
             offlineCtx,
             masterBusOffline,
@@ -989,7 +956,6 @@ async function renderCurrentDrumKitToWav(bars = 1) {
         );
 
         track.steps.forEach((stepData, i) => {
-
             const step = normalizeStep(stepData);
             if (!step?.active) return;
 
@@ -1002,8 +968,7 @@ async function renderCurrentDrumKitToWav(bars = 1) {
             const src = offlineCtx.createBufferSource();
             src.buffer = track.sampleBuffer;
 
-            src.playbackRate.value =
-                step.pitch ?? track.settings.pitch ?? 1;
+            src.playbackRate.value = step.pitch ?? track.settings.pitch ?? 1;
 
             src.connect(gain);
 
@@ -1028,7 +993,6 @@ async function renderCurrentDrumKitToWav(bars = 1) {
     });
 
     const rendered = await offlineCtx.startRendering();
-
     const trimmed = trimSilence(rendered);
 
     return trimmed;
