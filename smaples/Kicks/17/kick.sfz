@@ -1,0 +1,8 @@
+<group>
+lokey=35 hikey=36 pitch_keycenter=35 loop_mode=one_shot
+amp_veltrack=80 volume=-5
+<region> sample=kick_p.wav hivel=25
+<region> sample=kick_mp.wav lovel=26 hivel=50
+<region> sample=kick_mf.wav lovel=51 hivel=75
+<region> sample=kick_f.wav lovel=76 hivel=99
+<region> sample=kick_ff.wav lovel=100
