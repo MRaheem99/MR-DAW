@@ -287,11 +287,24 @@ const STORE_NAME = "wav_patterns";
 
 let rnDB = null;
 
+function normalizePaths(obj){
+    if(Array.isArray(obj)){
+        obj.forEach(normalizePaths);
+        return;
+    }
+    if(typeof obj === "object" && obj){
+        Object.values(obj).forEach(normalizePaths);
+        if(obj.path){
+            obj.path = obj.path.replace(/\\\//g,"/").replace(/^\.?\//,"./");
+        }
+    }
+}
+
 async function loadDrumPresets() {
     try {
         const res = await fetch('./drumkits.json');
         DRUM_PRESETS = await res.json();
-        console.log("Loaded Drum Kits:", DRUM_PRESETS);
+        normalizePaths(libraryData);
     } catch (err) {
         console.error("Failed to load drum presets", err);
     }
