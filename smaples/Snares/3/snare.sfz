@@ -1,0 +1,91 @@
+<group>
+key=40
+seq_length=5
+loop_mode=one_shot
+<region>
+sample=rimshot1.wav
+<region>
+sample=rimshot2.wav seq_position=2
+<region>
+sample=rimshot3.wav seq_position=3
+<region>
+sample=rimshot4.wav seq_position=4
+<region>
+sample=rimshot5.wav seq_position=5
+
+<group>
+key=38
+seq_length=2
+loop_mode=one_shot
+volume=-4
+<region>
+sample=snare_p1.wav
+hivel=22
+<region>
+sample=snare_p2.wav seq_position=2
+hivel=22
+<group>
+key=38
+seq_length=5
+loop_mode=one_shot
+volume=-4
+<region>
+sample=snare_mp1.wav
+lovel=23 hivel=44
+<region>
+sample=snare_mp2.wav seq_position=2
+lovel=23 hivel=54
+<region>
+sample=snare_mp3.wav seq_position=3
+lovel=23 hivel=54
+<region>
+sample=snare_mp4.wav seq_position=4
+lovel=23 hivel=54
+<region>
+sample=snare_mp5.wav seq_position=5
+lovel=23 hivel=54
+<region>
+sample=snare_f1.wav
+lovel=55 hivel=88
+<region>
+sample=snare_f2.wav seq_position=2
+lovel=55 hivel=88
+<region>
+sample=snare_f3.wav seq_position=3
+lovel=55 hivel=88
+<region>
+sample=snare_f4.wav seq_position=4
+lovel=55 hivel=88
+<region>
+sample=snare_f5.wav seq_position=5
+lovel=55 hivel=88
+<region>
+sample=snare_ff1.wav
+lovel=89 hivel=110
+<region>
+sample=snare_ff2.wav seq_position=2
+lovel=89 hivel=110
+<region>
+sample=snare_ff3.wav seq_position=3
+lovel=89 hivel=110
+<region>
+sample=snare_ff4.wav seq_position=4
+lovel=89 hivel=110
+<region>
+sample=snare_ff5.wav seq_position=5
+lovel=89 hivel=110
+<region>
+sample=snare_fff1.wav
+lovel=111
+<region>
+sample=snare_fff2.wav seq_position=2
+lovel=111
+<region>
+sample=snare_fff3.wav seq_position=3
+lovel=111
+<region>
+sample=snare_fff4.wav seq_position=4
+lovel=111
+<region>
+sample=snare_fff5.wav seq_position=5
+lovel=111
