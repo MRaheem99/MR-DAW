@@ -1,0 +1,67 @@
+<group>
+key=38
+seq_length=2
+loop_mode=one_shot
+volume=-4
+<region>
+sample=snare_pp1.wav
+hivel=18
+<region>
+sample=snare_pp2.wav seq_position=2
+hivel=18
+<region>
+sample=snare_p1.wav
+lovel=19 hivel=37
+<region>
+sample=snare_p2.wav seq_position=2
+lovel=19 hivel=37
+<group>
+key=38
+seq_length=3
+loop_mode=one_shot
+volume=-4
+<region>
+sample=snare_mp1.wav
+lovel=38 hivel=56
+<region>
+sample=snare_mp2.wav seq_position=2
+lovel=38 hivel=56
+<region>
+sample=snare_mp3.wav seq_position=3
+lovel=38 hivel=56
+<region>
+sample=snare_mf1.wav
+lovel=57 hivel=75
+<region>
+sample=snare_mf2.wav seq_position=2
+lovel=57 hivel=75
+<region>
+sample=snare_mf3.wav seq_position=3
+lovel=57 hivel=75
+<region>
+sample=snare_f1.wav
+lovel=76 hivel=94
+<region>
+sample=snare_f2.wav seq_position=2
+lovel=76 hivel=94
+<region>
+sample=snare_f3.wav seq_position=3
+lovel=76 hivel=94
+<region>
+sample=snare_ff1.wav
+lovel=95 hivel=113
+<region>
+sample=snare_ff2.wav seq_position=2
+lovel=95 hivel=113
+<region>
+sample=snare_ff3.wav seq_position=3
+lovel=95 hivel=113
+<region>
+sample=snare_fff1.wav
+lovel=114
+<region>
+sample=snare_fff2.wav seq_position=2
+lovel=114
+<region>
+sample=snare_fff3.wav seq_position=3
+lovel=114
