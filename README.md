@@ -124,16 +124,6 @@ This creates a 5-hit rhythm distributed evenly across 16 steps.
 
 ---
 
-# Live Demo
-
-Live demo:
-
-```txt
-https://mraheem99.github.io/MR-DAW/
-```
-
----
-
 # Technologies Used
 
 * HTML5
@@ -143,6 +133,12 @@ https://mraheem99.github.io/MR-DAW/
 * Canvas API
 * The Euclidean sequencer is implemented entirely in JavaScript using the Web Audio API scheduling engine for accurate browser-based timing and low-latency playback.
 * GitHub Pages
+
+## Live Demo
+
+🎹 Try the app online:
+
+[▶ Open Live Demo](https://mraheem99.github.io/MR-DAW/)
 
 ---
 
