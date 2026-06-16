@@ -8,7 +8,7 @@ function createRNSlider({
     width = 260,
     height = 60,
     onChange,
-    onCommit // optional (for undo/redo)
+    onCommit 
 }) {
     const wrapper = document.createElement('div');
     wrapper.className = 'rn-slider-wrapper';
@@ -43,7 +43,6 @@ function createRNSlider({
         }
     });
 
-    // Commit change (UNDO SAFE)
     const commit = () => {
         if (!dragging) return;
         dragging = false;
@@ -57,11 +56,9 @@ function createRNSlider({
     canvas.addEventListener('pointerup', commit);
     canvas.addEventListener('pointerleave', commit);
     window.addEventListener('pointerup', commit);
-
-    // ✅ EXPOSE A CLEAN API
     wrapper.setValue = (v) => slider.setValue(v);
     wrapper.getValue = () => slider.getValue();
-    wrapper.slider = slider; // optional direct access
+    wrapper.slider = slider;
 
     return wrapper;
 }
