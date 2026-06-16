@@ -106,15 +106,15 @@ mr-daw/
 │
 ├── css/
 │   ├── styles.css
-│   ├── popup.css
+│   └── popup.css
 │
 ├── js/
 │   ├── ui/
-|       ├── circleKnob.js
-|       ├── classicKnob.js
-|       ├── effect_panels.js
-|       ├── rn_slider.js
-|       ├── sliderAdapter.js
+|   |   ├── circleKnob.js
+|   |   ├── classicKnob.js
+|   |   ├── effect_panels.js
+|   |   ├── rn_slider.js
+|   |   └── sliderAdapter.js
 │   ├── audio.js
 │   ├── beatMarkers.js
 │   ├── effects.js
@@ -122,17 +122,17 @@ mr-daw/
 │   ├── history.js
 │   ├── instruments.js
 │   ├── lasso.js
-│   └── operator.js
-│   └── player.js
-│   └── popups.js
-│   └── project.js
-│   └── script.js
-│   └── synthPresets.js
+│   ├── operator.js
+│   ├── player.js
+│   ├── popups.js
+│   ├── project.js
+│   ├── script.js
+│   ├── synthPresets.js
 │   └── tracks.js
 │
 ├── samples/
 ├── img/
-├── ir/
+└── ir/
 ```
 
 ---
