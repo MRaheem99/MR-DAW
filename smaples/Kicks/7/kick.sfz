@@ -1,0 +1,101 @@
+<group>
+volume=-5
+lokey=35 hikey=36 pitch_keycenter=35
+seq_length=2
+loop_mode=one_shot
+amp_veltrack=60
+hivel=71
+<region>
+sample=kick_pppp1.wav
+hivel=12
+<region>
+sample=kick_pppp2.wav seq_position=2
+hivel=12
+<region>
+sample=kick_ppp1.wav
+lovel=13 hivel=25
+<region>
+sample=kick_ppp2.wav seq_position=2
+lovel=13 hivel=25
+<region>
+sample=kick_pp1.wav
+lovel=26 hivel=29
+<region>
+sample=kick_pp2.wav seq_position=2
+lovel=26 hivel=29
+<region>
+sample=kick_p1.wav
+lovel=30 hivel=43
+<region>
+sample=kick_p2.wav seq_position=2
+lovel=30 hivel=43
+<region>
+sample=kick_mp1.wav
+lovel=44 hivel=57
+<region>
+sample=kick_mp2.wav seq_position=2
+lovel=44 hivel=57
+<region>
+sample=kick_mf1.wav
+lovel=58 hivel=71
+<region>
+sample=kick_mf2.wav seq_position=2
+lovel=58 hivel=71
+
+<group>
+volume=-5
+lokey=35 hikey=36 pitch_keycenter=35
+seq_length=4
+loop_mode=one_shot
+amp_veltrack=60
+lovel=72 hivel=99
+<region>
+sample=kick_f1.wav
+lovel=72 hivel=85
+<region>
+sample=kick_f2.wav seq_position=2
+lovel=72 hivel=85
+<region>
+sample=kick_f3.wav seq_position=3
+lovel=72 hivel=85
+<region>
+sample=kick_f4.wav seq_position=4
+lovel=72 hivel=85
+<region>
+sample=kick_ff1.wav
+lovel=86 hivel=99
+<region>
+sample=kick_ff2.wav seq_position=2
+lovel=86 hivel=99
+<region>
+sample=kick_ff3.wav seq_position=3
+lovel=86 hivel=99
+<region>
+sample=kick_ff4.wav seq_position=4
+lovel=86 hivel=99
+
+<group>
+volume=-5
+lokey=35 hikey=36 pitch_keycenter=35
+seq_length=3
+loop_mode=one_shot
+amp_veltrack=60
+lovel=100 hivel=127
+<region>
+sample=kick_fff1.wav
+lovel=100 hivel=113
+<region>
+sample=kick_fff2.wav seq_position=2
+lovel=100 hivel=113
+<region>
+sample=kick_fff3.wav seq_position=3
+lovel=100 hivel=113
+<region>
+sample=kick_ffff1.wav
+lovel=114
+<region>
+sample=kick_ffff2.wav seq_position=2
+lovel=114
+<region>
+sample=kick_ffff3.wav seq_position=3
+lovel=114
