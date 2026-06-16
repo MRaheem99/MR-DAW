@@ -1,0 +1,173 @@
+{
+  "category": "kit",
+  "color": "FFC51C",
+  "defaultOctave": 36,
+  "defaultPreset": "",
+  "filters": ["instrument-type-drums", "instrument-drum-pads"],
+  "instrumentSlug": "drum-pads",
+  "isDeprecated": false,
+  "name": "909 Kit",
+  "release": null,
+  "samples": [{
+    "crossfade": 0,
+    "fileName": "036-909Kit-Kick",
+    "loopEnd": null,
+    "loopStart": null,
+    "maxRange": null,
+    "midiNumber": 36,
+    "minRange": null,
+    "urls": {
+      "m4a": "https://static.bandlab.com/v4.1/soundbanks/909-kit-v4/036-909Kit-Kick.m4a",
+      "ogg": "https://static.bandlab.com/v4.1/soundbanks/909-kit-v4/036-909Kit-Kick.ogg",
+      "wav": "https://static.bandlab.com/v4.1/soundbanks/909-kit-v4/036-909Kit-Kick.wav"
+    }
+  }, {
+    "crossfade": 0,
+    "fileName": "037-909Kit-Rim",
+    "loopEnd": null,
+    "loopStart": null,
+    "maxRange": null,
+    "midiNumber": 37,
+    "minRange": null,
+    "urls": {
+      "m4a": "https://static.bandlab.com/v4.1/soundbanks/909-kit-v4/037-909Kit-Rim.m4a",
+      "ogg": "https://static.bandlab.com/v4.1/soundbanks/909-kit-v4/037-909Kit-Rim.ogg",
+      "wav": "https://static.bandlab.com/v4.1/soundbanks/909-kit-v4/037-909Kit-Rim.wav"
+    }
+  }, {
+    "crossfade": 0,
+    "fileName": "038-909Kit-Snare",
+    "loopEnd": null,
+    "loopStart": null,
+    "maxRange": null,
+    "midiNumber": 38,
+    "minRange": null,
+    "urls": {
+      "m4a": "https://static.bandlab.com/v4.1/soundbanks/909-kit-v4/038-909Kit-Snare.m4a",
+      "ogg": "https://static.bandlab.com/v4.1/soundbanks/909-kit-v4/038-909Kit-Snare.ogg",
+      "wav": "https://static.bandlab.com/v4.1/soundbanks/909-kit-v4/038-909Kit-Snare.wav"
+    }
+  }, {
+    "crossfade": 0,
+    "fileName": "039-909Kit-Clap",
+    "loopEnd": null,
+    "loopStart": null,
+    "maxRange": null,
+    "midiNumber": 39,
+    "minRange": null,
+    "urls": {
+      "m4a": "https://static.bandlab.com/v4.1/soundbanks/909-kit-v4/039-909Kit-Clap.m4a",
+      "ogg": "https://static.bandlab.com/v4.1/soundbanks/909-kit-v4/039-909Kit-Clap.ogg",
+      "wav": "https://static.bandlab.com/v4.1/soundbanks/909-kit-v4/039-909Kit-Clap.wav"
+    }
+  }, {
+    "crossfade": 0,
+    "fileName": "040-909Kit-TechnoKick",
+    "loopEnd": null,
+    "loopStart": null,
+    "maxRange": null,
+    "midiNumber": 40,
+    "minRange": null,
+    "urls": {
+      "m4a": "https://static.bandlab.com/v4.1/soundbanks/909-kit-v4/040-909Kit-TechnoKick.m4a",
+      "ogg": "https://static.bandlab.com/v4.1/soundbanks/909-kit-v4/040-909Kit-TechnoKick.ogg",
+      "wav": "https://static.bandlab.com/v4.1/soundbanks/909-kit-v4/040-909Kit-TechnoKick.wav"
+    }
+  }, {
+    "crossfade": 0,
+    "fileName": "041-909Kit-LowTom",
+    "loopEnd": null,
+    "loopStart": null,
+    "maxRange": null,
+    "midiNumber": 41,
+    "minRange": null,
+    "urls": {
+      "m4a": "https://static.bandlab.com/v4.1/soundbanks/909-kit-v4/041-909Kit-LowTom.m4a",
+      "ogg": "https://static.bandlab.com/v4.1/soundbanks/909-kit-v4/041-909Kit-LowTom.ogg",
+      "wav": "https://static.bandlab.com/v4.1/soundbanks/909-kit-v4/041-909Kit-LowTom.wav"
+    }
+  }, {
+    "crossfade": 0,
+    "fileName": "042-909Kit-HighHatClosed",
+    "loopEnd": null,
+    "loopStart": null,
+    "maxRange": null,
+    "midiNumber": 42,
+    "minRange": null,
+    "urls": {
+      "m4a": "https://static.bandlab.com/v4.1/soundbanks/909-kit-v4/042-909Kit-HighHatClosed.m4a",
+      "ogg": "https://static.bandlab.com/v4.1/soundbanks/909-kit-v4/042-909Kit-HighHatClosed.ogg",
+      "wav": "https://static.bandlab.com/v4.1/soundbanks/909-kit-v4/042-909Kit-HighHatClosed.wav"
+    }
+  }, {
+    "crossfade": 0,
+    "fileName": "045-909Kit-MidTom",
+    "loopEnd": null,
+    "loopStart": null,
+    "maxRange": null,
+    "midiNumber": 45,
+    "minRange": null,
+    "urls": {
+      "m4a": "https://static.bandlab.com/v4.1/soundbanks/909-kit-v4/045-909Kit-MidTom.m4a",
+      "ogg": "https://static.bandlab.com/v4.1/soundbanks/909-kit-v4/045-909Kit-MidTom.ogg",
+      "wav": "https://static.bandlab.com/v4.1/soundbanks/909-kit-v4/045-909Kit-MidTom.wav"
+    }
+  }, {
+    "crossfade": 0,
+    "fileName": "046-909Kit-HighHatOpen",
+    "loopEnd": null,
+    "loopStart": null,
+    "maxRange": null,
+    "midiNumber": 46,
+    "minRange": null,
+    "urls": {
+      "m4a": "https://static.bandlab.com/v4.1/soundbanks/909-kit-v4/046-909Kit-HighHatOpen.m4a",
+      "ogg": "https://static.bandlab.com/v4.1/soundbanks/909-kit-v4/046-909Kit-HighHatOpen.ogg",
+      "wav": "https://static.bandlab.com/v4.1/soundbanks/909-kit-v4/046-909Kit-HighHatOpen.wav"
+    }
+  }, {
+    "crossfade": 0,
+    "fileName": "048-909Kit-HighTom",
+    "loopEnd": null,
+    "loopStart": null,
+    "maxRange": null,
+    "midiNumber": 48,
+    "minRange": null,
+    "urls": {
+      "m4a": "https://static.bandlab.com/v4.1/soundbanks/909-kit-v4/048-909Kit-HighTom.m4a",
+      "ogg": "https://static.bandlab.com/v4.1/soundbanks/909-kit-v4/048-909Kit-HighTom.ogg",
+      "wav": "https://static.bandlab.com/v4.1/soundbanks/909-kit-v4/048-909Kit-HighTom.wav"
+    }
+  }, {
+    "crossfade": 0,
+    "fileName": "049-909Kit-Crash",
+    "loopEnd": null,
+    "loopStart": null,
+    "maxRange": null,
+    "midiNumber": 49,
+    "minRange": null,
+    "urls": {
+      "m4a": "https://static.bandlab.com/v4.1/soundbanks/909-kit-v4/049-909Kit-Crash.m4a",
+      "ogg": "https://static.bandlab.com/v4.1/soundbanks/909-kit-v4/049-909Kit-Crash.ogg",
+      "wav": "https://static.bandlab.com/v4.1/soundbanks/909-kit-v4/049-909Kit-Crash.wav"
+    }
+  }, {
+    "crossfade": 0,
+    "fileName": "056-909Kit-Ride",
+    "loopEnd": null,
+    "loopStart": null,
+    "maxRange": null,
+    "midiNumber": 56,
+    "minRange": null,
+    "urls": {
+      "m4a": "https://static.bandlab.com/v4.1/soundbanks/909-kit-v4/056-909Kit-Ride.m4a",
+      "ogg": "https://static.bandlab.com/v4.1/soundbanks/909-kit-v4/056-909Kit-Ride.ogg",
+      "wav": "https://static.bandlab.com/v4.1/soundbanks/909-kit-v4/056-909Kit-Ride.wav"
+    }
+  }],
+  "slug": "909-kit-v4",
+  "subTitle": "Drum Pads",
+  "synth": "MIDISampleSynth",
+  "updatedAt": "1970-01-01T00:00:00Z",
+  "userInterfaces": ["drum-pads"]
+}
