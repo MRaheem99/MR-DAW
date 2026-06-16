@@ -1,0 +1,23 @@
+﻿<group>amp_veltrack=70 loop_mode=one_shot seq_length=2 lokey=35 hikey=36 pitch_keycenter=35
+<region> lovel=1 hivel=12 sample=kick_1.wav 
+<region> lovel=1 hivel=12 seq_position=2 sample=kick_2.wav
+<region> lovel=13 hivel=24 sample=kick_3.wav
+<region> lovel=13 hivel=24 seq_position=2 sample=kick_4.wav
+<region> lovel=25 hivel=36 sample=kick_5.wav
+<region> lovel=25 hivel=36 seq_position=2 sample=kick_6.wav
+<region> lovel=37 hivel=48 sample=kick_7.wav
+<region> lovel=37 hivel=48 seq_position=2 sample=kick_8.wav
+<region> lovel=49 hivel=60 sample=kick_9.wav
+<region> lovel=49 hivel=60 seq_position=2 sample=kick_10.wav
+<region> lovel=61 hivel=72 sample=kick_11.wav
+<region> lovel=61 hivel=72 seq_position=2 sample=kick_12.wav
+<region> lovel=73 hivel=84 sample=kick_13.wav
+<region> lovel=73 hivel=84 seq_position=2 sample=kick_14.wav
+<region> lovel=85 hivel=98 sample=kick_15.wav
+<region> lovel=85 hivel=98 seq_position=2 sample=kick_16.wav
+<region> lovel=99 hivel=120 sample=kick_17.wav
+<region> lovel=99 hivel=120 seq_position=2 sample=kick_18.wav
+<region> lovel=121 hivel=125 sample=kick_19.wav
+<region> lovel=121 hivel=125 seq_position=2 sample=kick_20.wav
+<region> lovel=126 hivel=127 sample=kick_21.wav
+<region> lovel=126 hivel=127 seq_position=2 sample=kick_22.wav
