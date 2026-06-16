@@ -266,10 +266,9 @@ function openTrackReverbPopup(track) {
             return;
         }
         try {
-            const response = await fetch('./list_ir.json');
+            const response = await fetch('list_ir.json');
             if (!response.ok) throw new Error('Failed to fetch IR list');
             const data = await response.json();
-            normalizePaths(data);
             cachedIRFiles = data.files;
             populateSelect(cachedIRFiles);
         } catch (err) {
