@@ -1,7 +1,7 @@
 //globals.js
 
 //const isMobile = 'ontouchstart' in window || navigator.maxTouchPoints > 0;
-let projectName = 'MR Studio';
+let projectName = 'MR DWA Project';
 const timelineRuler = document.getElementById('timeline-ruler');
 const rulerCanvas = document.getElementById('ruler-canvas');
 const timelineGrid = document.getElementById('timeline-grid');
