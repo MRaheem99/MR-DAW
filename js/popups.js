@@ -777,6 +777,7 @@ async function loadLibraryUI(libPopup, container, sampleList, onSelect) {
     } else {
         const res = await fetch('./samples.json');
         libraryData = await res.json();
+        normalizePaths(libraryData);
         cachedSampleFiles =  libraryData;
     }
 
