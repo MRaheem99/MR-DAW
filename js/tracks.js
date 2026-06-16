@@ -195,19 +195,15 @@ function addAudioTrackWithWaveform_L(audioBuffer, labelText) {
     });
     
     soloBtn.addEventListener('click', () => {
-
         const willSolo = !trackData.solo;
     
-        // Clear all solos first
         audioTracks.forEach(t => {
             t.solo = false;
     
-            // Remove active class from all solo buttons
             const btn = t.label.querySelector('[title="Solo"]');
             if (btn) btn.classList.remove('active');
         });
     
-        // If turning ON solo
         if (willSolo) {
             trackData.solo = true;
             soloBtn.classList.add('active');
@@ -245,7 +241,6 @@ function addAudioTrackWithWaveform(audioBuffer, labelText) {
         label: `hsl(${hue}, 40%, 30%)`
     };
 
-    // Create label
     const label = document.createElement('div');
     label.className = 'track-label';
     const subdiv1 = document.createElement('div');
@@ -283,7 +278,6 @@ function addAudioTrackWithWaveform(audioBuffer, labelText) {
     label.appendChild(subdiv2);
     trackLabels.appendChild(label);
 
-    // Create track element
     const track = document.createElement('div');
     track.className = 'track audio-track';
     track.id = `trackR_${audioTracks.length + 1}`;
@@ -292,7 +286,6 @@ function addAudioTrackWithWaveform(audioBuffer, labelText) {
     const pps = getPPS();
     const rulerWidth = totalSeconds * pps;
 
-    // Safe width calculation – use 0 if no buffer
     let sampleWidth = 0;
     if (audioBuffer && typeof audioBuffer.duration === 'number' && !isNaN(audioBuffer.duration)) {
         sampleWidth = audioBuffer.duration * pps;
@@ -306,12 +299,11 @@ function addAudioTrackWithWaveform(audioBuffer, labelText) {
     track.appendChild(waveformContainer);
     tracksContainer.appendChild(track);
 
-    // Track data
     const trackData = {
         trackId: audioTracks.length + 1,
         type: 'audio',
         clips: [],
-        sampleBuffer: audioBuffer || null,  // null is now safe
+        sampleBuffer: audioBuffer || null,
         instrument: 'sine',
         settings: {
             source: 'oscillator',
@@ -359,7 +351,6 @@ function addAudioTrackWithWaveform(audioBuffer, labelText) {
 
     syncTrackSettings(trackData);
 
-    // Only create initial clip if we have a valid buffer
     if (audioBuffer && typeof audioBuffer.duration === 'number' && !isNaN(audioBuffer.duration)) {
         const initialClip = createClip(audioBuffer, 0);
         initialClip.color = trackColor;
@@ -369,7 +360,6 @@ function addAudioTrackWithWaveform(audioBuffer, labelText) {
 
         trackData.startOffset = 0;
 
-        // Update totalSeconds safely
         const duration = audioBuffer.duration;
         if (duration > totalSeconds) {
             totalSeconds = Math.ceil(duration);
@@ -384,11 +374,9 @@ function addAudioTrackWithWaveform(audioBuffer, labelText) {
             applyZoom();
         }
     } else {
-        // Placeholder for loaded project (no buffer yet)
-        trackData.clips = []; // will be filled later in loadProjectData
+        trackData.clips = [];
     }
 
-    // Event listeners (unchanged)
     let longPressTimer;
     track.addEventListener('touchstart', (e) => {
         longPressTimer = setTimeout(() => {
@@ -535,7 +523,7 @@ function addInstrumentTrack_L(type) {
     const pps = getPPS();
     const secondsPerBeat = 60 / bpm;
     const stepsPerBeat = resolution / 4;
-    const secondsPerStep = getSecondsPerStep(); //secondsPerBeat / stepsPerBeat;
+    const secondsPerStep = getSecondsPerStep();
     const totalSteps = Math.ceil(totalSeconds / secondsPerStep);
     const stepWidth = secondsPerStep * pps;
 
@@ -668,7 +656,6 @@ function addInstrumentTrack(type, instrumentName = null, sampleBuffer = null) {
     label.id = `trackL_${audioTracks.length + 1}`;
     label.dataset.id = `${audioTracks.length + 1}`;
 
-    // Show actual instrument/sample name
     subdiv1.textContent = displayName.length > 7 ? `${displayName.slice(0, 7)}..` : displayName;
     label.title = displayName;
     label.dataset.name = displayName;
@@ -717,7 +704,7 @@ function addInstrumentTrack(type, instrumentName = null, sampleBuffer = null) {
         steps: type === 'instrument' ? new Array(totalSteps).fill(false) : null,
         notes: isSynth ? [] : null,
         instrument: instrumentName || (isSynth ? 'sawtooth' : 'sine'),
-        sampleBuffer: sampleBuffer || null,  // will be set if sample from library
+        sampleBuffer: sampleBuffer || null,
         settings: {
             source: sampleBuffer ? 'sample' : 'oscillator',
             volume: 1,
@@ -772,11 +759,10 @@ function addInstrumentTrack(type, instrumentName = null, sampleBuffer = null) {
     syncTrackSettings(trackData);
     initDefaultSynth(trackData);
 
-    // If sample from library is provided, use it
     if (sampleBuffer) {
         trackData.sampleBuffer = sampleBuffer;
         trackData.settings.source = 'sample';
-        trackData.settings.oscType = null; // no osc if sample
+        trackData.settings.oscType = null;
     }
 
     createStepCanvas(trackData);
