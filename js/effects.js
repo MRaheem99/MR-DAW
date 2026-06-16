@@ -1,5 +1,3 @@
-// effects.js
-
 function createEchoChain(ctx, opts = {}) {
     const delay = ctx.createDelay(5.0);
     const feedback = ctx.createGain();
@@ -406,7 +404,7 @@ function applyWah(ctx, filterNode, wah, startTime, duration) {
     lfo.type = 'sine';
     lfo.frequency.value = wah.rate;
 
-    lfoGain.gain.value = wah.depth * 2000; // Hz sweep
+    lfoGain.gain.value = wah.depth * 2000;
 
     lfo.connect(lfoGain);
     lfoGain.connect(filterNode.frequency);
