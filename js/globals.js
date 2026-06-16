@@ -1,6 +1,3 @@
-//globals.js
-
-//const isMobile = 'ontouchstart' in window || navigator.maxTouchPoints > 0;
 let projectName = 'MR DWA Project';
 const timelineRuler = document.getElementById('timeline-ruler');
 const rulerCanvas = document.getElementById('ruler-canvas');
@@ -376,6 +373,5 @@ function getProjectContentEnd() {
         }
     }); 
 
-    //return Math.max(lastTime, totalSeconds);
     return lastTime + 2;
 }
