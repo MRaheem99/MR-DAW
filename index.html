@@ -1,0 +1,157 @@
+<!--index.html-->
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+        <title>MR Studio</title>
+        <link rel="shortcut icon" href="./img/favicon.png">
+        <link rel="stylesheet" href="./css/styles.css" />
+        <link rel="stylesheet" href="./css/popup.css" />
+    </head>
+    <body>
+        <div id="top-menu">
+            <div class="transport-controls">
+                <img src="./img/icons/play-button-64.png" id="play-btn" title="Play" class="top-btn"/>
+                <img src="./img/icons/stop-button-64.png" id="stop-btn" title="Stop" class="top-btn"/>
+                <img src="./img/icons/metronome-64-r.png" id="tempo-btn" title="Metronome" class="top-btn"/>
+                <img src="./img/icons/undo-64.png" id="undo-btn" title="Undo" class="top-btn"/>
+                <img src="./img/icons/redo-64.png" id="redo-btn" title="Redo" class="top-btn"/>
+            </div>
+            
+            <div class="menu-right">
+                <div id="progressDiv" style="cursor:pointer;">MR Studio</div>
+                <div><img src="./img/icons/menu-64-w.png" id="main-menu-btn" title="Menu" class="top-btn"/></div>
+            </div>
+        </div>
+
+        <div id="timeline-wrapper">
+            <div id="track-labels">
+                <div id="track-label-header">
+                    <div> 
+                        <img src="./img/icons/song-64-w.png" id="add-audio" title="Add Audio Track" class="label-btn"/>
+                        <img src="./img/icons/drumkit-64-w.png" id="add-instrument" title="Add Drum" class="label-btn"/>
+                        <img src="./img/icons/piano-64-w.png" id="add-synth" title="Add Synth Track" class="label-btn"/>
+                    </div>
+                    <div>
+                        <img src="./img/icons/drag-64-w.png" id="magnetBtn" title="Drag Clips" class="label-btn"/>
+                        <img src="./img/icons/rectangle-64-w.png" id="lassoBtn" title="Lasso" class="label-btn"/>
+                    </div>
+                ️</div>
+            </div>
+            <div id="timeline-scroll">
+                <div id="timeline-content">
+                    <div id="hover-line"></div>
+                    <div id="timeline-ruler">
+                        <canvas id="ruler-canvas"></canvas>
+                    </div>
+                    <div id="timeline-grid"></div>
+                    <div id="tracks"></div>
+                    <div id="playhead"><div id="playhead-handle"></div></div>
+                </div>
+            </div>
+        </div>
+  
+        <div id="main-menu-popup" class="popup" style="display: none;">
+            <div class="popup-overlay"></div>
+            <div class="popup-panel" id="main-menu-popup-panel">
+                <div class="popup-header" id="mainMunuPopupHeader">
+                    Menu
+                    <span class="popup-close" id="menu-close-x">&times;</span>
+                </div>
+                <div class="popup-body">
+                    <div class="popup-field">
+                        <span>Tempo (BPM)</span>
+                        <button id="bpm-down" class="btn">−</button>
+                        <div class="bpm-input-wrapper">
+                            <input type="number" id="bpm-input" value="120" min="20" max="300" step="0.1">
+                        </div>
+                        <button id="bpm-up" class="btn">+</button>
+                    </div>
+                    <div class="popup-field">
+                    <button id="BPMPopup-btn" class="btn btn-default" style="width:100% !important;">BPM Detector</button>
+                    </div>
+                    
+                    <div class="popup-field">
+                    <button id="masterEffects-btn" class="btn btn-default" style="width:100% !important;">Master Effects</button>
+                    </div>
+        
+                    <div class="popup-field">
+                        <span>Grid Resolution</span>
+                        <select id="resolution-select">
+                            <option value="4">1/4</option>
+                            <option value="8">1/8</option>
+                            <option value="16" selected>1/16</option>
+                            <option value="32">1/32</option>
+                            <option value="64">1/64</option>
+                        </select>
+                    </div>
+        
+                    <hr style="border:0; border-top:1px solid #444; margin:15px 0;">
+        
+                    <div class="popup-field">
+                        <span>Project Name</span>
+                        <input type="text" id="project-name-input" placeholder="Untitled Project" style="flex:2; padding:8px;">
+                    </div>
+        
+                    <div style="display: flex; gap: 8px; margin-top: 10px;">
+                        <button id="menu-save-btn" class="btn" style="background: #2196F3; flex: 1;">&#128190; Save .json</button>
+                        <button id="menu-load-btn" class="btn btn-default" style="flex: 1;">&#128194; Load .json</button>
+                    </div>
+        
+                    <button id="menu-export-wav-btn" class="btn" style="background: #4caf50; width: 100%; margin-top: 10px; padding: 12px;">&#128266; Export Final WAV</button>
+        
+                    <div id="export-progress-container" style="display: none; margin-top: 15px;">
+                        <div style="font-size:10px; color:#888; margin-bottom:5px;">Exporting Audio...</div>
+                        <div style="width:100%; background:#222; height:8px; border-radius:4px; overflow:hidden;">
+                            <div id="export-progress-fill" style="width:0%; height:100%; background:#4caf50; transition:width 0.2s;"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+        <div id="bpm-popup" class="popup" style="display: none;">
+            <div class="popup-overlay"></div>
+            <div class="popup-panel" id="bpm-popup-panel">
+                <div class="popup-header" id="bpmPopupHeader">
+                    BPM Detector
+                    <span class="popup-close" id="bpmPopup-close">&times;</span>
+                </div>
+                <div class="popup-body">
+                    <div class="popup-field">
+                        <span>Select File</span>
+                        <input type="file" id="bpm-file-input" accept="audio/*"/>
+                    </div>
+        
+                    <div class="popup-field">
+                        <button id="BPManalyzeBtn" class="btn btn-default" style="width:100% !important;" disabled>Analyze BPM</button>
+                    </div>
+        
+                    <div class="popup-field">
+                        <div id="BPMstatus"></div>
+                        <div id="BPMresult"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+  
+        <script src="./js/globals.js"></script>
+        <script src="./js/effects.js"></script>
+        <script src="./js/ui/popup.js"></script>
+        <script src="./js/ui/rn_slider.js"></script>
+        <script src="./js/ui/sliderAdapter.js"></script>
+        <script src="./js/ui/effect_panels.js"></script>
+        <script src="./js/popups.js"></script>
+        <script src="./js/operator.js"></script>
+        <script src="./js/synthPresets.js"></script>
+        <script src="./js/script.js"></script>
+        <script src="./js/tracks.js"></script>
+        <script src="./js/instruments.js"></script>
+        <script src="./js/lasso.js"></script>
+        <script src="./js/audio.js"></script>
+        <script src="./js/player.js"></script>
+        <script src="./js/project.js"></script>
+        <script src="./js/history.js"></script>
+    </body>
+</html>
