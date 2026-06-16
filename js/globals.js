@@ -289,7 +289,7 @@ let rnDB = null;
 
 async function loadDrumPresets() {
     try {
-        const res = await fetch("./drumkits.json");
+        const res = await fetch('./drumkits.json');
         DRUM_PRESETS = await res.json();
         console.log("Loaded Drum Kits:", DRUM_PRESETS);
     } catch (err) {
