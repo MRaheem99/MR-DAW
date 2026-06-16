@@ -1,0 +1,35 @@
+<group>
+volume=-5
+lokey=35 hikey=36 pitch_keycenter=35
+loop_mode=one_shot
+amp_veltrack=80
+<region>
+sample=kick_pp.wav
+hivel=21
+<region>
+sample=kick_p.wav
+lovel=22 hivel=43
+<region>
+sample=kick_mp.wav
+lovel=44 hivel=65
+<region>
+sample=kick_mf.wav
+lovel=66 hivel=87
+<group>
+volume=-5
+lokey=35 hikey=36 pitch_keycenter=35
+loop_mode=one_shot
+amp_veltrack=80
+seq_length=2
+<region>
+sample=kick_f1.wav
+lovel=88 hivel=107
+<region>
+sample=kick_f2.wav seq_position=2
+lovel=88 hivel=107
+<region>
+sample=kick_ff1.wav
+lovel=108
+<region>
+sample=kick_ff2.wav seq_position=2
+lovel=108
