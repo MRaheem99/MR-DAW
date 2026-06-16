@@ -1,5 +1,3 @@
-//player.js
-
 function midiToFreq(midi) {
     return 440 * Math.pow(2, (midi - 69) / 12);
 }
@@ -172,24 +170,20 @@ function scheduleClipPlayback_L(track, clip, timelineStart, offsetIntoClip) {
 function scheduleClipPlayback(track, clip, timelineStart, offsetIntoClip) {
     if (!clip.buffer) return;
 
-    const audioCtx = audioContext; // your global AudioContext
+    const audioCtx = audioContext;
 
     const source = audioCtx.createBufferSource();
     source.buffer = clip.buffer;
 
-    // Pitch
     const pitch = clip.effects?.pitch ?? 1;
     source.playbackRate.value = pitch;
 
-    // Volume (Gain)
     const clipGain = audioCtx.createGain();
     clipGain.gain.value = clip.effects?.volume ?? 1;
 
-    // Pan
     const clipPan = audioCtx.createStereoPanner();
     clipPan.pan.value = clip.effects?.pan ?? 0;
 
-    // Fade In / Fade Out
     const fadeInTime = clip.effects?.fadeIn ?? 0;
     const fadeOutTime = clip.effects?.fadeOut ?? 0;
     const clipDuration = clip.trimEnd - clip.trimStart;
@@ -197,7 +191,6 @@ function scheduleClipPlayback(track, clip, timelineStart, offsetIntoClip) {
     const startTime = audioCtx.currentTime + (timelineStart - pausedAt || 0);
     const endTime = startTime + clipDuration;
 
-    // Apply fades to clipGain
     if (fadeInTime > 0) {
         clipGain.gain.setValueAtTime(0, startTime);
         clipGain.gain.linearRampToValueAtTime(clip.effects.volume ?? 1, startTime + fadeInTime);
@@ -210,10 +203,8 @@ function scheduleClipPlayback(track, clip, timelineStart, offsetIntoClip) {
         clipGain.gain.linearRampToValueAtTime(0, endTime);
     }
 
-    // Build the chain
     let lastNode = source;
 
-    // Insert Chorus if enabled
     if (clip.effects?.chorus > 0) {
         const chorus = createChorusNode(audioCtx, {
             rate: 0.5 + clip.effects.chorus * 1.5,
@@ -226,7 +217,6 @@ function scheduleClipPlayback(track, clip, timelineStart, offsetIntoClip) {
         lastNode = chorus.output;
     }
 
-    // Insert Delay if enabled
     if (clip.effects?.delayTime > 0 || clip.effects?.delayMix > 0) {
         const delayNode = audioCtx.createDelay(2);
         delayNode.delayTime.value = clip.effects.delayTime ?? 0;
@@ -240,11 +230,9 @@ function scheduleClipPlayback(track, clip, timelineStart, offsetIntoClip) {
         const delayDry = audioCtx.createGain();
         delayDry.gain.value = 1 - (clip.effects.delayMix ?? 0);
 
-        // Dry path
         lastNode.connect(delayDry);
         delayDry.connect(clipGain);
 
-        // Wet path + feedback
         lastNode.connect(delayNode);
         delayNode.connect(delayFeedback);
         delayFeedback.connect(delayNode);
@@ -254,18 +242,11 @@ function scheduleClipPlayback(track, clip, timelineStart, offsetIntoClip) {
         lastNode.connect(clipGain);
     }
 
-    // Final routing
     clipGain.connect(clipPan);
     clipPan.connect(track.effects?.inputNode || masterBus.input);
 
-    // Start and stop
-    //source.start(startTime, clip.trimStart + offsetIntoClip);
-    
-    //const clipDuration = clip.trimEnd - clip.trimStart;
     const sourceDuration = clip.buffer.duration;
-
     const loopOffset = (clip.trimStart + offsetIntoClip) % sourceDuration;
-
     const remaining = clipDuration - offsetIntoClip;
 
     source.loop = true;
@@ -493,7 +474,6 @@ function scheduleSteps() {
 
         audioTracks.forEach(track => {
             syncTrackSettings(track);
-            //if (track.muted) return;
             if (!track._canPlay) return;
             if (track.type === 'synth') {
                 track.notes.forEach(note => {
@@ -662,7 +642,7 @@ function scheduleSteps() {
                     }
             
                     const note = {
-                        pitch: 60, // base C
+                        pitch: 60,
                         velocity: step.velocity ?? 1,
                         pan: step.pan ?? track.settings.pan ?? 0,
                         attack: step.attack ?? track.settings.attack,
@@ -773,9 +753,6 @@ function previewTrackStep(track, step = {}) {
     const pan = step.pan ?? track.settings.pan ?? 0;
     const pitch = step.pitch ?? track.settings.pitch ?? 1;
 
-    // -----------------------------------
-    // SAMPLE MODE
-    // -----------------------------------
     if (
         track.settings.source === 'sample' &&
         track.sampleBuffer
@@ -814,13 +791,10 @@ function previewTrackStep(track, step = {}) {
         return;
     }
 
-    // -----------------------------------
-    // OSCILLATOR / SYNTH MODE
-    // -----------------------------------
     if (
         track.settings.source === 'oscillator'
     ) {
-        const freq = 261.63 * pitch; // middle C preview
+        const freq = 261.63 * pitch;
 
         createSynthVoices(
             track,
