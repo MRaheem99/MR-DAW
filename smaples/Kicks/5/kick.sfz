@@ -1,0 +1,28 @@
+<group>
+volume=-5
+key=35
+loop_mode=one_shot
+amp_veltrack=80
+<region>
+sample=kick_mf1.wav
+hivel=50
+<region>
+sample=kick_f1.wav
+lovel=51 hivel=100
+<region>
+sample=kick_ff1.wav
+lovel=101
+<group>
+volume=-5
+key=36
+loop_mode=one_shot
+amp_veltrack=80
+<region>
+sample=kick_mf2.wav
+hivel=50
+<region>
+sample=kick_f2.wav
+lovel=51 hivel=100
+<region>
+sample=kick_ff2.wav
+lovel=101
