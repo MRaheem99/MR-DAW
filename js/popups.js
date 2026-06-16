@@ -1,5 +1,3 @@
-//popups.js
-
 function openInstrumentPopup(track) {
     track.settings ??= {};
     track.settings.source ??= 'oscillator';
@@ -2702,19 +2700,11 @@ function openAddDrumPopup() {
     numberInput1.max = 32;
     numberInput1.value = 1;
     numberInput1.style.width = "80px";
-    
-    //const labelBar = document.createElement('span');
-    //labelBar.textContent = "Bars:";
-    
     const randomBtn = document.createElement("button");
     randomBtn.textContent = "Pattern Editor";
     randomBtn.className = "btn btn-default";
     
     inputWrapper1.append(randomBtn);
-    
-    //const saveBtn = document.createElement("button");
-    //saveBtn.textContent = "Save Pattern";
-    //saveBtn.className = "btn btn-default";
     
     const patternList = document.createElement("div");
     patternList.className = "pattern-list";
@@ -2728,7 +2718,6 @@ function openAddDrumPopup() {
     
     
     randomBtn.onclick = () => {
-        //const bars = Math.max(1, parseInt(numberInput1.value) || 1);
         window.currentDrumPattern = generateRandomDrumPattern(audioTracks, 1, 'techno');
         openDrumPatternEditor(window.currentDrumPattern, audioTracks, 1, 'techno');
     };
@@ -2821,11 +2810,8 @@ function openDrumPatternEditor(pattern, audioTrackss, barss, genre) {
     grid.style.gap = "6px";
 
     gridWrapper.appendChild(grid);
-    
-    //const drumNames = ["Kick", "Snare", "HiHat", "Clap", "Tom", "Perc", "Ride", "Crash"];
 
     drumTracks.forEach(track => {
-
         const row = document.createElement("div");
         row.style.position = "relative";
         row.style.display = "block";
@@ -2959,19 +2945,16 @@ function openDrumPatternEditor(pattern, audioTrackss, barss, genre) {
     };
 
     playBtn.onclick = () => {
-
         const secondsPerStep = getSecondsPerStep();
         const startTime = audioContext.currentTime;
 
         stopPreview();
 
         drumTracks.forEach(track => {
-
             const steps = pattern.data[track.trackId];
             if (!steps) return;
 
             steps.forEach((v, i) => {
-
                 if (!v) return;
 
                 const time =
@@ -2983,16 +2966,13 @@ function openDrumPatternEditor(pattern, audioTrackss, barss, genre) {
         });
 
         previewTimer = setInterval(() => {
-
             const now = audioContext.currentTime;
 
             drumTracks.forEach(track => {
-
                 const steps = pattern.data[track.trackId];
                 if (!steps) return;
 
                 steps.forEach((v, i) => {
-
                     if (!v) return;
 
                     const time =
