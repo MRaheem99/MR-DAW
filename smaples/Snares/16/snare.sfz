@@ -1,0 +1,16 @@
+<group> key=38 seq_length=5 loop_mode=one_shot
+<region> sample=snare_p1.wav hivel=50
+<region> sample=snare_p2.wav seq_position=2 hivel=50
+<region> sample=snare_p3.wav seq_position=3 hivel=50
+<region> sample=snare_p4.wav seq_position=4 hivel=50
+<region> sample=snare_p5.wav seq_position=5 hivel=50
+<region> sample=snare_mf1.wav lovel=51 hivel=89
+<region> sample=snare_mf2.wav seq_position=2 lovel=51 hivel=89
+<region> sample=snare_mf3.wav seq_position=3 lovel=51 hivel=89
+<region> sample=snare_mf4.wav seq_position=4 lovel=51 hivel=89
+<region> sample=snare_mf5.wav seq_position=5 lovel=51 hivel=89
+<region> sample=snare_f1.wav lovel=90
+<region> sample=snare_f2.wav seq_position=2 lovel=90
+<region> sample=snare_f3.wav seq_position=3 lovel=90
+<region> sample=snare_f4.wav seq_position=4 lovel=90
+<region> sample=snare_f5.wav seq_position=5 lovel=90

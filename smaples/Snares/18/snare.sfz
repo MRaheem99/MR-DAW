@@ -1,0 +1,20 @@
+<group> key=38 loop_mode=one_shot hivel=40
+volume=-4
+<region> sample=snare_p1.wav
+<group> key=38 seq_length=2 loop_mode=one_shot lovel=41
+volume=-4
+<region> sample=snare_mp1.wav hivel=63
+<region> sample=snare_mp2.wav seq_position=2 hivel=63
+<region> sample=snare_mf1.wav lovel=64 hivel=95
+<region> sample=snare_mf2.wav seq_position=2 lovel=64 hivel=95
+<region> sample=snare_f1.wav lovel=96
+<region> sample=snare_f2.wav seq_position=2 lovel=96
+
+<group>
+key=40
+seq_length=2
+loop_mode=one_shot
+<region>
+sample=rimshot1.wav
+<region>
+sample=rimshot2.wav seq_position=2
