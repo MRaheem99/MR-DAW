@@ -1,0 +1,18 @@
+<group>
+volume=-5
+lokey=35 hikey=36 pitch_keycenter=35
+seq_length=2
+loop_mode=one_shot
+amp_veltrack=80
+<region>
+sample=kick_mf1.wav
+hivel=89
+<region>
+sample=kick_mf2.wav seq_position=2
+hivel=89
+<region>
+sample=kick_f1.wav
+lovel=90
+<region>
+sample=kick_f2.wav seq_position=2
+lovel=90
