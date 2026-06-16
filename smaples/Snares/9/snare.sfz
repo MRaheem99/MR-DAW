@@ -1,0 +1,33 @@
+<group>
+key=38
+seq_length=2
+loop_mode=one_shot
+<region>
+sample=snare_p1.wav
+hivel=43
+<region>              
+sample=snare_p2.wav seq_position=2
+hivel=43
+<group>
+key=38
+seq_length=3
+loop_mode=one_shot
+<region>
+sample=snare_mf1.wav
+lovel=44 hivel=86
+<region>
+sample=snare_mf2.wav seq_position=2
+lovel=44 hivel=86
+<region>
+<region>
+sample=snare_mf3.wav seq_position=3
+lovel=44 hivel=86
+<region>
+sample=snare_f1.wav
+lovel=87
+<region>
+sample=snare_f2.wav seq_position=2
+lovel=87
+<region>
+sample=snare_f3.wav seq_position=3
+lovel=87
