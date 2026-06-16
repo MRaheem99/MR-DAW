@@ -1078,6 +1078,7 @@ async function previewLibraryFile(url) {
         libraryPreviewSource.buffer = decodedBuffer;
         libraryPreviewSource.connect(masterBus.input);
         libraryPreviewSource.start(0);
+        console.log("Loaded sample: " + url);
     } catch (err) {
         console.error("Preview Error:", err);
     }
