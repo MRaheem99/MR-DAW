@@ -1,0 +1,47 @@
+<group>
+key=42
+seq_length=2
+volume=-15
+group=1
+loop_mode=one_shot
+<region>
+sample=Closed1a.wav
+hivel=43
+<region>
+sample=Closed1b.wav seq_position=2
+hivel=43
+<region>
+sample=Closed2a.wav
+lovel=44 hivel=85
+<region>
+sample=Closed2b.wav seq_position=2
+lovel=44 hivel=85
+<region>
+sample=Closed3a.wav
+lovel=86
+<region>
+sample=Closed3b.wav seq_position=2
+lovel=86
+
+<group>
+key=44
+seq_length=2
+group=2
+loop_mode=one_shot
+<region>
+sample=Pedal1a.wav
+<region>
+sample=Pedal1b.wav seq_position=2
+
+<group>
+volume=-10
+key=46
+group=3
+off_mode=fast off_by=1 off_by=2 offby=1 offby=2
+seq_length=2
+ampeg_sustain=0.1 ampeg_hold=100 ampeg_release=30 ampeg_decay=30
+loop_mode=loop_continuous
+<region>
+sample=Open1a.wav
+<region>
+sample=Open1b.wav seq_position=2
