@@ -1,5 +1,3 @@
-//script.js
-
 function getCanvasStepFromEvent(e) {
     const rect = timelineContent.getBoundingClientRect();
 
@@ -226,7 +224,6 @@ function createStepCanvas(trackData) {
             const trackIdx = getTrackIndexFromY(coords.y);
             if (trackIdx == null) return;
     
-            //const stepIdxx = Math.floor(coords.x / getStepWidth());
             window.pasteTarget = { trackIdx, stepIdx };
         
             pasteStepsAt();
@@ -1100,7 +1097,6 @@ function applyZoom() {
 
     if (timelineContent) timelineContent.style.width = totalWidth + 'px';
 
-    //if(totalWidth < 63700){
         audioTracks.forEach(track => {
             if (track.trackElement) {
                 track.trackElement.style.width = totalWidth + 'px';
@@ -1109,7 +1105,6 @@ function applyZoom() {
                     track.clips.forEach(clip => {
                         if(clip.dom){
                             clip.dom.style.left = (clip.startOffset * pps) + 'px';
-                            //clip.dom.style.width = (clip.buffer.duration * pps) + 'px';
                             clip.dom.style.width = ((clip.trimEnd - clip.trimStart) * pps) + 'px';
                             const canvas = clip.dom.querySelector('canvas');
                             if (canvas) drawClipWaveform(clip, canvas, pps);
@@ -1139,12 +1134,12 @@ function applyZoom() {
         if (window.lassoExists && lassoState) {
             drawSelectionBox();
         }
-    //}
+    
 }
 
 function handleTouchStart(e, clip, track) {
     const now = Date.now();
-    const TIMESPAN = 300; // ms
+    const TIMESPAN = 300;
 
     if (now - lastTap < TIMESPAN) {
         console.log("Double tapped clip:", clip);
