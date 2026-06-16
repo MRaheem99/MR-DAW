@@ -302,32 +302,17 @@ function normalizePaths(obj){
 
 async function loadDrumPresets() {
     try {
-        const res = await fetch("drumkits.json");
+        const res = await fetch("/drumkits.json");
         DRUM_PRESETS = await res.json();
     } catch (err) {
         console.error("Failed to load drum presets", err);
     }
 }
 
-async function loadSampleBuffer_L(url) {
+async function loadSampleBuffer(url) {
     const response = await fetch(url);
     const arrayBuffer = await response.arrayBuffer();
     return await audioContext.decodeAudioData(arrayBuffer);
-}
-
-async function loadSampleBuffer(url){
-    try{
-        const response = await fetch(encodeURI(url));
-        if(!response.ok){
-            throw new Error(`HTTP ${response.status} : ${url}`);
-        }
-        const arrayBuffer = await response.arrayBuffer();
-        const audioBuffer = await audioContext.decodeAudioData(arrayBuffer);
-        return audioBuffer;
-    }catch(err){
-        console.error("Sample load failed:",url,err);
-        return null;
-    }
 }
 
 function isMobile() {
