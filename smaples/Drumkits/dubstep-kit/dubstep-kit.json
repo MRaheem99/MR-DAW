@@ -1,0 +1,173 @@
+{
+  "category": "kit",
+  "color": "FFC51C",
+  "defaultOctave": 36,
+  "defaultPreset": "",
+  "filters": ["instrument-type-drums", "instrument-drum-pads"],
+  "instrumentSlug": "drum-pads",
+  "isDeprecated": false,
+  "name": "Dubstep Kit",
+  "release": null,
+  "samples": [{
+    "crossfade": 0,
+    "fileName": "036-EDMDub_Kick",
+    "loopEnd": null,
+    "loopStart": null,
+    "maxRange": null,
+    "midiNumber": 36,
+    "minRange": null,
+    "urls": {
+      "m4a": "https://static.bandlab.com/v4.1/soundbanks/dubstep-kit/036-EDMDub_Kick.m4a",
+      "ogg": "https://static.bandlab.com/v4.1/soundbanks/dubstep-kit/036-EDMDub_Kick.ogg",
+      "wav": "https://static.bandlab.com/v4.1/soundbanks/dubstep-kit/036-EDMDub_Kick.wav"
+    }
+  }, {
+    "crossfade": 0,
+    "fileName": "037-EDMDub_SideStick",
+    "loopEnd": null,
+    "loopStart": null,
+    "maxRange": null,
+    "midiNumber": 37,
+    "minRange": null,
+    "urls": {
+      "m4a": "https://static.bandlab.com/v4.1/soundbanks/dubstep-kit/037-EDMDub_SideStick.m4a",
+      "ogg": "https://static.bandlab.com/v4.1/soundbanks/dubstep-kit/037-EDMDub_SideStick.ogg",
+      "wav": "https://static.bandlab.com/v4.1/soundbanks/dubstep-kit/037-EDMDub_SideStick.wav"
+    }
+  }, {
+    "crossfade": 0,
+    "fileName": "038-EDMDub_Snare",
+    "loopEnd": null,
+    "loopStart": null,
+    "maxRange": null,
+    "midiNumber": 38,
+    "minRange": null,
+    "urls": {
+      "m4a": "https://static.bandlab.com/v4.1/soundbanks/dubstep-kit/038-EDMDub_Snare.m4a",
+      "ogg": "https://static.bandlab.com/v4.1/soundbanks/dubstep-kit/038-EDMDub_Snare.ogg",
+      "wav": "https://static.bandlab.com/v4.1/soundbanks/dubstep-kit/038-EDMDub_Snare.wav"
+    }
+  }, {
+    "crossfade": 0,
+    "fileName": "039-EDMDub_Clap",
+    "loopEnd": null,
+    "loopStart": null,
+    "maxRange": null,
+    "midiNumber": 39,
+    "minRange": null,
+    "urls": {
+      "m4a": "https://static.bandlab.com/v4.1/soundbanks/dubstep-kit/039-EDMDub_Clap.m4a",
+      "ogg": "https://static.bandlab.com/v4.1/soundbanks/dubstep-kit/039-EDMDub_Clap.ogg",
+      "wav": "https://static.bandlab.com/v4.1/soundbanks/dubstep-kit/039-EDMDub_Clap.wav"
+    }
+  }, {
+    "crossfade": 0,
+    "fileName": "040-EDMDub_AltSnare",
+    "loopEnd": null,
+    "loopStart": null,
+    "maxRange": null,
+    "midiNumber": 40,
+    "minRange": null,
+    "urls": {
+      "m4a": "https://static.bandlab.com/v4.1/soundbanks/dubstep-kit/040-EDMDub_AltSnare.m4a",
+      "ogg": "https://static.bandlab.com/v4.1/soundbanks/dubstep-kit/040-EDMDub_AltSnare.ogg",
+      "wav": "https://static.bandlab.com/v4.1/soundbanks/dubstep-kit/040-EDMDub_AltSnare.wav"
+    }
+  }, {
+    "crossfade": 0,
+    "fileName": "041-EDMDub_LowTom",
+    "loopEnd": null,
+    "loopStart": null,
+    "maxRange": null,
+    "midiNumber": 41,
+    "minRange": null,
+    "urls": {
+      "m4a": "https://static.bandlab.com/v4.1/soundbanks/dubstep-kit/041-EDMDub_LowTom.m4a",
+      "ogg": "https://static.bandlab.com/v4.1/soundbanks/dubstep-kit/041-EDMDub_LowTom.ogg",
+      "wav": "https://static.bandlab.com/v4.1/soundbanks/dubstep-kit/041-EDMDub_LowTom.wav"
+    }
+  }, {
+    "crossfade": 0,
+    "fileName": "042-EDMDub_ClosedHH",
+    "loopEnd": null,
+    "loopStart": null,
+    "maxRange": null,
+    "midiNumber": 42,
+    "minRange": null,
+    "urls": {
+      "m4a": "https://static.bandlab.com/v4.1/soundbanks/dubstep-kit/042-EDMDub_ClosedHH.m4a",
+      "ogg": "https://static.bandlab.com/v4.1/soundbanks/dubstep-kit/042-EDMDub_ClosedHH.ogg",
+      "wav": "https://static.bandlab.com/v4.1/soundbanks/dubstep-kit/042-EDMDub_ClosedHH.wav"
+    }
+  }, {
+    "crossfade": 0,
+    "fileName": "045-EDMDub_MidTom",
+    "loopEnd": null,
+    "loopStart": null,
+    "maxRange": null,
+    "midiNumber": 45,
+    "minRange": null,
+    "urls": {
+      "m4a": "https://static.bandlab.com/v4.1/soundbanks/dubstep-kit/045-EDMDub_MidTom.m4a",
+      "ogg": "https://static.bandlab.com/v4.1/soundbanks/dubstep-kit/045-EDMDub_MidTom.ogg",
+      "wav": "https://static.bandlab.com/v4.1/soundbanks/dubstep-kit/045-EDMDub_MidTom.wav"
+    }
+  }, {
+    "crossfade": 0,
+    "fileName": "046-EDMDub_OpenedHH",
+    "loopEnd": null,
+    "loopStart": null,
+    "maxRange": null,
+    "midiNumber": 46,
+    "minRange": null,
+    "urls": {
+      "m4a": "https://static.bandlab.com/v4.1/soundbanks/dubstep-kit/046-EDMDub_OpenedHH.m4a",
+      "ogg": "https://static.bandlab.com/v4.1/soundbanks/dubstep-kit/046-EDMDub_OpenedHH.ogg",
+      "wav": "https://static.bandlab.com/v4.1/soundbanks/dubstep-kit/046-EDMDub_OpenedHH.wav"
+    }
+  }, {
+    "crossfade": 0,
+    "fileName": "048-EDMDub_HiTom",
+    "loopEnd": null,
+    "loopStart": null,
+    "maxRange": null,
+    "midiNumber": 48,
+    "minRange": null,
+    "urls": {
+      "m4a": "https://static.bandlab.com/v4.1/soundbanks/dubstep-kit/048-EDMDub_HiTom.m4a",
+      "ogg": "https://static.bandlab.com/v4.1/soundbanks/dubstep-kit/048-EDMDub_HiTom.ogg",
+      "wav": "https://static.bandlab.com/v4.1/soundbanks/dubstep-kit/048-EDMDub_HiTom.wav"
+    }
+  }, {
+    "crossfade": 0,
+    "fileName": "049-EDMDub_Crash",
+    "loopEnd": null,
+    "loopStart": null,
+    "maxRange": null,
+    "midiNumber": 49,
+    "minRange": null,
+    "urls": {
+      "m4a": "https://static.bandlab.com/v4.1/soundbanks/dubstep-kit/049-EDMDub_Crash.m4a",
+      "ogg": "https://static.bandlab.com/v4.1/soundbanks/dubstep-kit/049-EDMDub_Crash.ogg",
+      "wav": "https://static.bandlab.com/v4.1/soundbanks/dubstep-kit/049-EDMDub_Crash.wav"
+    }
+  }, {
+    "crossfade": 0,
+    "fileName": "056-EDMDub_Fingersnap",
+    "loopEnd": null,
+    "loopStart": null,
+    "maxRange": null,
+    "midiNumber": 56,
+    "minRange": null,
+    "urls": {
+      "m4a": "https://static.bandlab.com/v4.1/soundbanks/dubstep-kit/056-EDMDub_Fingersnap.m4a",
+      "ogg": "https://static.bandlab.com/v4.1/soundbanks/dubstep-kit/056-EDMDub_Fingersnap.ogg",
+      "wav": "https://static.bandlab.com/v4.1/soundbanks/dubstep-kit/056-EDMDub_Fingersnap.wav"
+    }
+  }],
+  "slug": "dubstep-kit",
+  "subTitle": "Drum Pads",
+  "synth": "MIDISampleSynth",
+  "updatedAt": "1970-01-01T00:00:00Z",
+  "userInterfaces": ["drum-pads"]
+}
