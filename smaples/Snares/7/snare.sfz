@@ -1,0 +1,135 @@
+<group>
+key=40
+seq_length=9
+loop_mode=one_shot
+<region>
+sample=rimshot1.wav
+<region>
+sample=rimshot2.wav seq_position=2
+<region>
+sample=rimshot3.wav seq_position=3
+<region>
+sample=rimshot4.wav seq_position=4
+<region>
+sample=rimshot5.wav seq_position=5
+<region>
+sample=rimshot6.wav seq_position=6
+<region>
+sample=rimshot7.wav seq_position=7
+<region>
+sample=rimshot8.wav seq_position=8
+<region>
+sample=rimshot9.wav seq_position=9
+
+<group>
+key=38
+seq_length=9
+loop_mode=one_shot
+<region>
+sample=snare_p1.wav
+hivel=35
+<region>
+sample=snare_p2.wav seq_position=2
+hivel=35
+<region>
+sample=snare_p3.wav seq_position=3
+hivel=35
+<region>
+sample=snare_p4.wav seq_position=4
+hivel=35
+<region>
+sample=snare_p5.wav seq_position=5
+hivel=35
+<region>
+sample=snare_p6.wav seq_position=6
+hivel=35
+<region>
+sample=snare_p7.wav seq_position=7
+hivel=35
+<region>
+sample=snare_p8.wav seq_position=8
+hivel=35
+<region>
+sample=snare_p9.wav seq_position=9
+hivel=35
+<region>
+sample=snare_mp1.wav
+lovel=36 hivel=70
+<region>
+sample=snare_mp2.wav seq_position=2
+lovel=36 hivel=70
+<region>
+sample=snare_mp3.wav seq_position=3
+lovel=36 hivel=70
+<region>
+sample=snare_mp4.wav seq_position=4
+lovel=36 hivel=70
+<region>
+sample=snare_mp5.wav seq_position=5
+lovel=36 hivel=70
+<region>
+sample=snare_mp6.wav seq_position=6
+lovel=36 hivel=70
+<region>
+sample=snare_mp7.wav seq_position=7
+lovel=36 hivel=70
+<region>
+sample=snare_mp8.wav seq_position=8
+lovel=36 hivel=70
+<region>
+sample=snare_mp9.wav seq_position=9
+lovel=36 hivel=70
+<region>
+sample=snare_mf1.wav
+lovel=71 hivel=100
+<region>
+sample=snare_mf2.wav seq_position=2
+lovel=71 hivel=100
+<region>
+sample=snare_mf3.wav seq_position=3
+lovel=71 hivel=100
+<region>
+sample=snare_mf4.wav seq_position=4
+lovel=71 hivel=100
+<region>
+sample=snare_mf5.wav seq_position=5
+lovel=71 hivel=100
+<region>
+sample=snare_mf6.wav seq_position=6
+lovel=71 hivel=100
+<region>
+sample=snare_mf7.wav seq_position=7
+lovel=71 hivel=100
+<region>
+sample=snare_mf8.wav seq_position=8
+lovel=71 hivel=100
+<region>
+sample=snare_mf9.wav seq_position=9
+lovel=71 hivel=100
+<region>
+sample=snare_f1.wav
+lovel=101
+<region>
+sample=snare_f2.wav seq_position=2
+lovel=101
+<region>
+sample=snare_f3.wav seq_position=3
+lovel=101
+<region>
+sample=snare_f4.wav seq_position=4
+lovel=101
+<region>
+sample=snare_f5.wav seq_position=5
+lovel=101
+<region>
+sample=snare_f6.wav seq_position=6
+lovel=101
+<region>
+sample=snare_f7.wav seq_position=7
+lovel=101
+<region>
+sample=snare_f8.wav seq_position=8
+lovel=101
+<region>
+sample=snare_f9.wav seq_position=9
+lovel=101
