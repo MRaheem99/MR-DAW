@@ -1,5 +1,3 @@
-//operator.js
-
 function setLiveParam(param, value, smoothing = 0.03) {
     if (!param || !param.setTargetAtTime) return;
 
@@ -36,22 +34,6 @@ function clearRulerSelection() {
     loopEnd = null;
 }
 
-/*
-timelineScroll.addEventListener('wheel', (e) => {
-    if (!e.ctrlKey) return;
-    e.preventDefault();
-
-    if (zoomRAF) return;
-
-    zoomRAF = requestAnimationFrame(() => {
-        const delta = e.deltaY < 0 ? 2 : -2;
-        zoomLevel = Math.max(2, Math.min(50, zoomLevel + delta));
-        applyZoom();
-        zoomRAF = null;
-    });
-}, { passive: false });
-*/
-
 timelineScroll.addEventListener('wheel', (e) => {
 
     if (!e.ctrlKey) return;
@@ -79,7 +61,6 @@ timelineScroll.addEventListener('wheel', (e) => {
         const ppsAfter = getPPS();
         const newTimelineWidth = totalSeconds * ppsAfter;
 
-        // prevent exceeding max width
         if (newTimelineWidth > MAX_TIMELINE_WIDTH) {
             zoomLevel = oldZoom;
             zoomRAF = null;
@@ -88,7 +69,6 @@ timelineScroll.addEventListener('wheel', (e) => {
 
         applyZoom();
 
-        // keep zoom centered at mouse
         const newScrollLeft = (timeAtCursor * ppsAfter) - mouseX;
         timelineScroll.scrollLeft = newScrollLeft;
 
@@ -121,7 +101,6 @@ timelineScroll.addEventListener('touchstart', (e) => {
 }, { passive: false });
 
 timelineScroll.addEventListener('touchmove', (e) => {
-
     if (window.isMagnetActive) return;
 
     const MAX_TIMELINE_WIDTH = 63700;
@@ -132,24 +111,19 @@ timelineScroll.addEventListener('touchmove', (e) => {
         const dx = touchCurrentX - touchStartX;
 
         timelineScroll.scrollLeft = scrollStartX - dx;
-
     }
 
     else if (e.touches.length === 2) {
-
         const currentDist = Math.hypot(
             e.touches[1].pageX - e.touches[0].pageX,
             e.touches[1].pageY - e.touches[0].pageY
         );
 
         if (lastTouchDist > 0) {
-
             const delta = currentDist - lastTouchDist;
 
             if (Math.abs(delta) > 5) {
-
                 const zoomFactor = delta > 0 ? 1.1 : 0.9;
-
                 const oldZoom = zoomLevel;
                 const newZoom = Math.max(2, Math.min(100, zoomLevel * zoomFactor));
 
@@ -158,7 +132,6 @@ timelineScroll.addEventListener('touchmove', (e) => {
                 const pps = getPPS();
                 const newTimelineWidth = totalSeconds * pps;
 
-                // prevent exceeding max width
                 if (newTimelineWidth > MAX_TIMELINE_WIDTH) {
                     zoomLevel = oldZoom;
                     lastTouchDist = currentDist;
@@ -175,41 +148,6 @@ timelineScroll.addEventListener('touchmove', (e) => {
     e.preventDefault();
 
 }, { passive: false });
-
-/*
-timelineScroll.addEventListener('touchmove', (e) => {
-
-    if(!window.isMagnetActive){
-        if (e.touches.length === 1) {
-            const touchCurrentX = e.touches[0].pageX;
-            const dx = touchCurrentX - touchStartX;
-            timelineScroll.scrollLeft = scrollStartX - dx;
-    
-        } else if (e.touches.length === 2) {
-            const currentDist = Math.hypot(
-                e.touches[1].pageX - e.touches[0].pageX,
-                e.touches[1].pageY - e.touches[0].pageY
-            );
-    
-            if (lastTouchDist > 0) {
-                const delta = currentDist - lastTouchDist;
-                
-                if (Math.abs(delta) > 5) {
-                    const zoomFactor = delta > 0 ? 1.1 : 0.9;
-                    const newZoom = zoomLevel * zoomFactor;
-                    
-                    zoomLevel = Math.max(2, Math.min(100, newZoom));
-                    
-                    applyZoom();
-                    lastTouchDist = currentDist;
-                }
-            }
-        }
-        e.preventDefault();
-    }
-}, { passive: false });
-
-*/
 
 timelineScroll.addEventListener('touchend', () => {
     lastTouchDist = 0;
