@@ -122,7 +122,6 @@
                     
                     ctx.beginPath();
                     ctx.moveTo(railX + railThickness, y);
-                    //ctx.lineTo(railX, y);
                     ctx.lineTo(railX + railThickness + len, y);
                     ctx.stroke();
                 }
@@ -346,7 +345,7 @@
         }
     
         destroy() {
-          // Cleanup can be added if needed
+          
         }
         getPrecision() {
             const step = this.options.step;
