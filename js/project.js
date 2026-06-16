@@ -1,4 +1,3 @@
-// project.js
 const tail = 0; 
 const duration = getProjectContentEnd() + tail;
 
@@ -746,14 +745,14 @@ function saveProjectData() {
         bpm: getBPM(),
         resolution: resolution,
         totalSeconds: getProjectContentEnd(),
-        masterSettings: masterBus?.settings ? structuredClone(masterBus.settings) : {}, // optional
+        masterSettings: masterBus?.settings ? structuredClone(masterBus.settings) : {},
         tracks: audioTracks.map(t => ({
             type: t.type,
             name: t.label?.dataset.name || "Track",
             muted: t.muted,
             solo: t.solo,
-            instrument: t.instrument, // name
-            libraryPath: t.libraryPath || null, // ← NEW: save full path (e.g. "./samples/kick_1.wav")
+            instrument: t.instrument,
+            libraryPath: t.libraryPath || null,
             settings: structuredClone(t.settings || {}),
             steps: t.type === 'instrument' ? structuredClone(t.steps || []) : null,
             notes: t.type === 'synth' ? (t.notes || []).map(n => ({
@@ -776,7 +775,7 @@ function saveProjectData() {
                 trimStart: c.trimStart,
                 trimEnd: c.trimEnd,
                 effects: structuredClone(c.effects || {}),
-                libraryPath: c.libraryPath || null // ← NEW for audio clips
+                libraryPath: c.libraryPath || null
             })) : null
         }))
     };
@@ -827,7 +826,6 @@ async function loadProjectData(file) {
                     track.steps = structuredClone(t.steps || []);
                     track.instrument = t.instrument;
 
-                    // Auto-load sample if libraryPath exists
                     if (t.libraryPath) {
                         try {
                             const response = await fetch(t.libraryPath);
@@ -837,8 +835,8 @@ async function loadProjectData(file) {
 
                             track.sampleBuffer = buffer;
                             track.settings.source = 'sample';
-                            track.instrument = t.instrument; // name from JSON
-                            // Update label to show loaded sample name
+                            track.instrument = t.instrument; 
+                            
                             const displayName = t.instrument || "Sample";
                             if (track.label && track.label.childNodes[0]) {
                                 track.label.childNodes[0].textContent = 
@@ -848,7 +846,6 @@ async function loadProjectData(file) {
                             track.label.dataset.name = displayName;
                         } catch (err) {
                             console.warn(`Failed to load sample from ${t.libraryPath}:`, err);
-                            // Fallback to oscillator (default behavior)
                         }
                     }
                 } else if (t.type === 'synth') {
@@ -861,7 +858,6 @@ async function loadProjectData(file) {
                     }));
                     track.instrument = t.instrument;
 
-                    // Same auto-load logic for synth if it uses sample
                     if (t.libraryPath) {
                         try {
                             const response = await fetch(t.libraryPath);
@@ -872,7 +868,7 @@ async function loadProjectData(file) {
                             track.sampleBuffer = buffer;
                             track.settings.source = 'sample';
                             track.instrument = t.instrument;
-                            // Update label
+                            
                             const displayName = t.instrument || "Sample";
                             if (track.label && track.label.childNodes[0]) {
                                 track.label.childNodes[0].textContent = 
@@ -899,13 +895,12 @@ async function loadProjectData(file) {
                             buffer: null,
                             color: track.color,
                             track: track,
-                            libraryPath: c.libraryPath  // save for later reload
+                            libraryPath: c.libraryPath
                         };
                         track.clips.push(clip);
                         renderClipPlaceholder(track, clip);
                     });
 
-                    // Auto-reload clip buffers if libraryPath exists
                     for (const clip of track.clips) {
                         if (clip.libraryPath) {
                             try {
@@ -913,7 +908,7 @@ async function loadProjectData(file) {
                                 if (!response.ok) throw new Error("File not found");
                                 const arrayBuffer = await response.arrayBuffer();
                                 clip.buffer = await audioContext.decodeAudioData(arrayBuffer);
-                                renderClip(track, clip); // re-render with buffer
+                                renderClip(track, clip);
                             } catch (err) {
                                 console.warn(`Failed to load clip from ${clip.libraryPath}:`, err);
                             }
@@ -926,7 +921,7 @@ async function loadProjectData(file) {
                     track.solo = !!t.solo;
                     track.instrument = t.instrument;
                     track.settings = structuredClone(t.settings || {});
-                    track.libraryPath = t.libraryPath || null; // store for future
+                    track.libraryPath = t.libraryPath || null;
                     drawTrackSteps?.(track);
                 }
             }
@@ -973,10 +968,9 @@ async function reloadAudioBuffers() {
 
             track.clips.forEach(clip => {
                 clip.buffer = buffer;
-                renderClip(track, clip); // now waveform appears
+                renderClip(track, clip);
             });
 
-            // Update track width
             const sampleWidth = buffer.duration * getPPS();
             const rulerWidth = totalSeconds * getPPS();
             track.trackElement.style.width = `${Math.max(rulerWidth, sampleWidth)}px`;
