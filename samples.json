@@ -71,7 +71,7 @@
       },
       "Acoustic-Bass-Legato": {
         "type": "folder",
-        "path": "./samples/Basses/Acoustic-Bass-Legato/",
+        "path": "samples/Basses/Acoustic-Bass-Legato/",
         "children": [
           {
             "type": "file",
@@ -117,7 +117,7 @@
       },
       "Classic-Synth-Bass": {
         "type": "folder",
-        "path": "./samples/Basses/Classic-Synth-Bass/",
+        "path": "samples/Basses/Classic-Synth-Bass/",
         "children": [
           {
             "type": "file",
@@ -178,7 +178,7 @@
       },
       "Contrabass": {
         "type": "folder",
-        "path": "./samples/Basses/Contrabass/",
+        "path": "samples/Basses/Contrabass/",
         "children": [
           {
             "type": "file",
@@ -249,7 +249,7 @@
       },
       "Dance-Lead": {
         "type": "folder",
-        "path": "./samples/Basses/Dance-Lead/",
+        "path": "samples/Basses/Dance-Lead/",
         "children": [
           {
             "type": "file",
@@ -360,7 +360,7 @@
       },
       "Electric-Bass": {
         "type": "folder",
-        "path": "./samples/Basses/Electric-Bass/",
+        "path": "samples/Basses/Electric-Bass/",
         "children": [
           {
             "type": "file",
@@ -451,7 +451,7 @@
       },
       "Funky-Slap": {
         "type": "folder",
-        "path": "./samples/Basses/Funky-Slap/",
+        "path": "samples/Basses/Funky-Slap/",
         "children": [
           {
             "type": "file",
@@ -509,7 +509,7 @@
   },
   "Claps": {
     "type": "folder",
-    "path": "./samples/Claps/",
+    "path": "samples/Claps/",
     "children": [
       {
         "type": "file",
@@ -765,7 +765,7 @@
   },
   "Cymbals": {
     "type": "folder",
-    "path": "./samples/Cymbals/",
+    "path": "samples/Cymbals/",
     "children": [
       {
         "type": "file",
@@ -896,11 +896,11 @@
   },
   "Drumkits": {
     "type": "folder",
-    "path": "./samples/Drumkits/",
+    "path": "samples/Drumkits/",
     "children": {
       "808_1": {
         "type": "folder",
-        "path": "./samples/Drumkits/808_1/",
+        "path": "samples/Drumkits/808_1/",
         "children": [
           {
             "type": "file",
@@ -966,7 +966,7 @@
       },
       "909-kit-v4": {
         "type": "folder",
-        "path": "./samples/Drumkits/909-kit-v4/",
+        "path": "samples/Drumkits/909-kit-v4/",
         "children": [
           {
             "type": "file",
@@ -1027,7 +1027,7 @@
       },
       "abstract-hip-hop-kit-v4": {
         "type": "folder",
-        "path": "./samples/Drumkits/abstract-hip-hop-kit-v4/",
+        "path": "samples/Drumkits/abstract-hip-hop-kit-v4/",
         "children": [
           {
             "type": "file",
@@ -1093,7 +1093,7 @@
       },
       "afrobeat-creators-kit-01-v4": {
         "type": "folder",
-        "path": "./samples/Drumkits/afrobeat-creators-kit-01-v4/",
+        "path": "samples/Drumkits/afrobeat-creators-kit-01-v4/",
         "children": [
           {
             "type": "file",
@@ -1179,7 +1179,7 @@
       },
       "afrobeat-creators-kit-02-v4": {
         "type": "folder",
-        "path": "./samples/Drumkits/afrobeat-creators-kit-02-v4/",
+        "path": "samples/Drumkits/afrobeat-creators-kit-02-v4/",
         "children": [
           {
             "type": "file",
@@ -1265,7 +1265,7 @@
       },
       "atlanta-hip-hop-kit-v4": {
         "type": "folder",
-        "path": "./samples/Drumkits/atlanta-hip-hop-kit-v4/",
+        "path": "samples/Drumkits/atlanta-hip-hop-kit-v4/",
         "children": [
           {
             "type": "file",
@@ -1331,7 +1331,7 @@
       },
       "boom-bap-kit-2-v4": {
         "type": "folder",
-        "path": "./samples/Drumkits/boom-bap-kit-2-v4/",
+        "path": "samples/Drumkits/boom-bap-kit-2-v4/",
         "children": [
           {
             "type": "file",
@@ -1397,7 +1397,7 @@
       },
       "boom-bap-kit-v4": {
         "type": "folder",
-        "path": "./samples/Drumkits/boom-bap-kit-v4/",
+        "path": "samples/Drumkits/boom-bap-kit-v4/",
         "children": [
           {
             "type": "file",
@@ -1463,7 +1463,7 @@
       },
       "brush-kit": {
         "type": "folder",
-        "path": "./samples/Drumkits/brush-kit/",
+        "path": "samples/Drumkits/brush-kit/",
         "children": [
           {
             "type": "file",
@@ -1549,7 +1549,7 @@
       },
       "chill-wave-kit-v4": {
         "type": "folder",
-        "path": "./samples/Drumkits/chill-wave-kit-v4/",
+        "path": "samples/Drumkits/chill-wave-kit-v4/",
         "children": [
           {
             "type": "file",
@@ -1635,7 +1635,7 @@
       },
       "classic-rock-kit": {
         "type": "folder",
-        "path": "./samples/Drumkits/classic-rock-kit/",
+        "path": "samples/Drumkits/classic-rock-kit/",
         "children": [
           {
             "type": "file",
@@ -1721,7 +1721,7 @@
       },
       "compton-kit-v4": {
         "type": "folder",
-        "path": "./samples/Drumkits/compton-kit-v4/",
+        "path": "samples/Drumkits/compton-kit-v4/",
         "children": [
           {
             "type": "file",
@@ -1807,7 +1807,7 @@
       },
       "country-kit": {
         "type": "folder",
-        "path": "./samples/Drumkits/country-kit/",
+        "path": "samples/Drumkits/country-kit/",
         "children": [
           {
             "type": "file",
@@ -1893,7 +1893,7 @@
       },
       "dark-hip-hop-kit": {
         "type": "folder",
-        "path": "./samples/Drumkits/dark-hip-hop-kit/",
+        "path": "samples/Drumkits/dark-hip-hop-kit/",
         "children": [
           {
             "type": "file",
@@ -1959,7 +1959,7 @@
       },
       "dnb-kit-v4": {
         "type": "folder",
-        "path": "./samples/Drumkits/dnb-kit-v4/",
+        "path": "samples/Drumkits/dnb-kit-v4/",
         "children": [
           {
             "type": "file",
@@ -2025,7 +2025,7 @@
       },
       "dont-stop-disco-creators-kit-vol-01-v4": {
         "type": "folder",
-        "path": "./samples/Drumkits/dont-stop-disco-creators-kit-vol-01-v4/",
+        "path": "samples/Drumkits/dont-stop-disco-creators-kit-vol-01-v4/",
         "children": [
           {
             "type": "file",
@@ -2111,7 +2111,7 @@
       },
       "dubstep-creators-kit-v4": {
         "type": "folder",
-        "path": "./samples/Drumkits/dubstep-creators-kit-v4/",
+        "path": "samples/Drumkits/dubstep-creators-kit-v4/",
         "children": [
           {
             "type": "file",
@@ -2197,7 +2197,7 @@
       },
       "dubstep-kit": {
         "type": "folder",
-        "path": "./samples/Drumkits/dubstep-kit/",
+        "path": "samples/Drumkits/dubstep-kit/",
         "children": [
           {
             "type": "file",
@@ -2263,7 +2263,7 @@
       },
       "edm-creators-kit-v4": {
         "type": "folder",
-        "path": "./samples/Drumkits/edm-creators-kit-v4/",
+        "path": "samples/Drumkits/edm-creators-kit-v4/",
         "children": [
           {
             "type": "file",
@@ -2349,7 +2349,7 @@
       },
       "electro-pop-kit": {
         "type": "folder",
-        "path": "./samples/Drumkits/electro-pop-kit/",
+        "path": "samples/Drumkits/electro-pop-kit/",
         "children": [
           {
             "type": "file",
@@ -2415,7 +2415,7 @@
       },
       "funk-kit": {
         "type": "folder",
-        "path": "./samples/Drumkits/funk-kit/",
+        "path": "samples/Drumkits/funk-kit/",
         "children": [
           {
             "type": "file",
@@ -2501,7 +2501,7 @@
       },
       "fusion-kit": {
         "type": "folder",
-        "path": "./samples/Drumkits/fusion-kit/",
+        "path": "samples/Drumkits/fusion-kit/",
         "children": [
           {
             "type": "file",
@@ -2587,7 +2587,7 @@
       },
       "glitch-kit": {
         "type": "folder",
-        "path": "./samples/Drumkits/glitch-kit/",
+        "path": "samples/Drumkits/glitch-kit/",
         "children": [
           {
             "type": "file",
@@ -2653,7 +2653,7 @@
       },
       "hard-rock-kit": {
         "type": "folder",
-        "path": "./samples/Drumkits/hard-rock-kit/",
+        "path": "samples/Drumkits/hard-rock-kit/",
         "children": [
           {
             "type": "file",
@@ -2739,7 +2739,7 @@
       },
       "hip-hop-kit": {
         "type": "folder",
-        "path": "./samples/Drumkits/hip-hop-kit/",
+        "path": "samples/Drumkits/hip-hop-kit/",
         "children": [
           {
             "type": "file",
@@ -2825,7 +2825,7 @@
       },
       "house-creator-kit-v4": {
         "type": "folder",
-        "path": "./samples/Drumkits/house-creator-kit-v4/",
+        "path": "samples/Drumkits/house-creator-kit-v4/",
         "children": [
           {
             "type": "file",
@@ -2911,7 +2911,7 @@
       },
       "idm-kit-v4": {
         "type": "folder",
-        "path": "./samples/Drumkits/idm-kit-v4/",
+        "path": "samples/Drumkits/idm-kit-v4/",
         "children": [
           {
             "type": "file",
@@ -2977,7 +2977,7 @@
       },
       "indie-rock-kit": {
         "type": "folder",
-        "path": "./samples/Drumkits/indie-rock-kit/",
+        "path": "samples/Drumkits/indie-rock-kit/",
         "children": [
           {
             "type": "file",
@@ -3063,7 +3063,7 @@
       },
       "jazz-kit": {
         "type": "folder",
-        "path": "./samples/Drumkits/jazz-kit/",
+        "path": "samples/Drumkits/jazz-kit/",
         "children": [
           {
             "type": "file",
@@ -3149,7 +3149,7 @@
       },
       "latin-kit": {
         "type": "folder",
-        "path": "./samples/Drumkits/latin-kit/",
+        "path": "samples/Drumkits/latin-kit/",
         "children": [
           {
             "type": "file",
@@ -3235,7 +3235,7 @@
       },
       "lcd-kit-v4": {
         "type": "folder",
-        "path": "./samples/Drumkits/lcd-kit-v4/",
+        "path": "samples/Drumkits/lcd-kit-v4/",
         "children": [
           {
             "type": "file",
@@ -3301,7 +3301,7 @@
       },
       "lo-fi-dreams-creators-kit-v4": {
         "type": "folder",
-        "path": "./samples/Drumkits/lo-fi-dreams-creators-kit-v4/",
+        "path": "samples/Drumkits/lo-fi-dreams-creators-kit-v4/",
         "children": [
           {
             "type": "file",
@@ -3387,7 +3387,7 @@
       },
       "lo-fi-hip-hop-creators-kit-v4": {
         "type": "folder",
-        "path": "./samples/Drumkits/lo-fi-hip-hop-creators-kit-v4/",
+        "path": "samples/Drumkits/lo-fi-hip-hop-creators-kit-v4/",
         "children": [
           {
             "type": "file",
@@ -3473,7 +3473,7 @@
       },
       "lo-fi-hop-kit-v4": {
         "type": "folder",
-        "path": "./samples/Drumkits/lo-fi-hop-kit-v4/",
+        "path": "samples/Drumkits/lo-fi-hop-kit-v4/",
         "children": [
           {
             "type": "file",
@@ -3559,7 +3559,7 @@
       },
       "lofi-creator-kit-ii-v4": {
         "type": "folder",
-        "path": "./samples/Drumkits/lofi-creator-kit-ii-v4/",
+        "path": "samples/Drumkits/lofi-creator-kit-ii-v4/",
         "children": [
           {
             "type": "file",
@@ -3645,7 +3645,7 @@
       },
       "pop-rock-kit": {
         "type": "folder",
-        "path": "./samples/Drumkits/pop-rock-kit/",
+        "path": "samples/Drumkits/pop-rock-kit/",
         "children": [
           {
             "type": "file",
@@ -3731,7 +3731,7 @@
       },
       "prince-kit": {
         "type": "folder",
-        "path": "./samples/Drumkits/prince-kit/",
+        "path": "samples/Drumkits/prince-kit/",
         "children": [
           {
             "type": "file",
@@ -3797,7 +3797,7 @@
       },
       "reggae-kit": {
         "type": "folder",
-        "path": "./samples/Drumkits/reggae-kit/",
+        "path": "samples/Drumkits/reggae-kit/",
         "children": [
           {
             "type": "file",
@@ -3883,7 +3883,7 @@
       },
       "retro-future-synth-creators-kit-v4": {
         "type": "folder",
-        "path": "./samples/Drumkits/retro-future-synth-creators-kit-v4/",
+        "path": "samples/Drumkits/retro-future-synth-creators-kit-v4/",
         "children": [
           {
             "type": "file",
@@ -3969,7 +3969,7 @@
       },
       "rnb-creators-kit-01-v4": {
         "type": "folder",
-        "path": "./samples/Drumkits/rnb-creators-kit-01-v4/",
+        "path": "samples/Drumkits/rnb-creators-kit-01-v4/",
         "children": [
           {
             "type": "file",
@@ -4055,7 +4055,7 @@
       },
       "rock-kit-v4": {
         "type": "folder",
-        "path": "./samples/Drumkits/rock-kit-v4/",
+        "path": "samples/Drumkits/rock-kit-v4/",
         "children": [
           {
             "type": "file",
@@ -4141,7 +4141,7 @@
       },
       "roddy-rich-creators-kit-v4": {
         "type": "folder",
-        "path": "./samples/Drumkits/roddy-rich-creators-kit-v4/",
+        "path": "samples/Drumkits/roddy-rich-creators-kit-v4/",
         "children": [
           {
             "type": "file",
@@ -4227,7 +4227,7 @@
       },
       "sinister-creators-kit-v4": {
         "type": "folder",
-        "path": "./samples/Drumkits/sinister-creators-kit-v4/",
+        "path": "samples/Drumkits/sinister-creators-kit-v4/",
         "children": [
           {
             "type": "file",
@@ -4313,7 +4313,7 @@
       },
       "space-juice-creators-kit-v4": {
         "type": "folder",
-        "path": "./samples/Drumkits/space-juice-creators-kit-v4/",
+        "path": "samples/Drumkits/space-juice-creators-kit-v4/",
         "children": [
           {
             "type": "file",
@@ -4399,7 +4399,7 @@
       },
       "synth-kit": {
         "type": "folder",
-        "path": "./samples/Drumkits/synth-kit/",
+        "path": "samples/Drumkits/synth-kit/",
         "children": [
           {
             "type": "file",
@@ -4465,7 +4465,7 @@
       },
       "synthpop-creators-kit-v4": {
         "type": "folder",
-        "path": "./samples/Drumkits/synthpop-creators-kit-v4/",
+        "path": "samples/Drumkits/synthpop-creators-kit-v4/",
         "children": [
           {
             "type": "file",
@@ -4551,7 +4551,7 @@
       },
       "techno-brute-kit-v4": {
         "type": "folder",
-        "path": "./samples/Drumkits/techno-brute-kit-v4/",
+        "path": "samples/Drumkits/techno-brute-kit-v4/",
         "children": [
           {
             "type": "file",
@@ -4617,7 +4617,7 @@
       },
       "techno-throwback-kit": {
         "type": "folder",
-        "path": "./samples/Drumkits/techno-throwback-kit/",
+        "path": "samples/Drumkits/techno-throwback-kit/",
         "children": [
           {
             "type": "file",
@@ -4683,7 +4683,7 @@
       },
       "textures-kit-v4": {
         "type": "folder",
-        "path": "./samples/Drumkits/textures-kit-v4/",
+        "path": "samples/Drumkits/textures-kit-v4/",
         "children": [
           {
             "type": "file",
@@ -4749,7 +4749,7 @@
       },
       "trap-creators-kit-01-v4": {
         "type": "folder",
-        "path": "./samples/Drumkits/trap-creators-kit-01-v4/",
+        "path": "samples/Drumkits/trap-creators-kit-01-v4/",
         "children": [
           {
             "type": "file",
@@ -4835,7 +4835,7 @@
       },
       "trap-creators-kit-02-v4": {
         "type": "folder",
-        "path": "./samples/Drumkits/trap-creators-kit-02-v4/",
+        "path": "samples/Drumkits/trap-creators-kit-02-v4/",
         "children": [
           {
             "type": "file",
@@ -4921,7 +4921,7 @@
       },
       "trap-kit": {
         "type": "folder",
-        "path": "./samples/Drumkits/trap-kit/",
+        "path": "samples/Drumkits/trap-kit/",
         "children": [
           {
             "type": "file",
@@ -4987,7 +4987,7 @@
       },
       "trip-hop-creators-kit-v4": {
         "type": "folder",
-        "path": "./samples/Drumkits/trip-hop-creators-kit-v4/",
+        "path": "samples/Drumkits/trip-hop-creators-kit-v4/",
         "children": [
           {
             "type": "file",
@@ -5073,7 +5073,7 @@
       },
       "ultra-808-v4": {
         "type": "folder",
-        "path": "./samples/Drumkits/ultra-808-v4/",
+        "path": "samples/Drumkits/ultra-808-v4/",
         "children": [
           {
             "type": "file",
@@ -5139,7 +5139,7 @@
       },
       "uncommon-creators-kit-v4": {
         "type": "folder",
-        "path": "./samples/Drumkits/uncommon-creators-kit-v4/",
+        "path": "samples/Drumkits/uncommon-creators-kit-v4/",
         "children": [
           {
             "type": "file",
@@ -5227,7 +5227,7 @@
   },
   "FX-Sounds": {
     "type": "folder",
-    "path": "./samples/FX-Sounds/",
+    "path": "samples/FX-Sounds/",
     "children": [
       {
         "type": "file",
@@ -5303,11 +5303,11 @@
   },
   "Hihats": {
     "type": "folder",
-    "path": "./samples/Hihats/",
+    "path": "samples/Hihats/",
     "children": {
       "1": {
         "type": "folder",
-        "path": "./samples/Hihats/1/",
+        "path": "samples/Hihats/1/",
         "children": [
           {
             "type": "file",
@@ -5378,7 +5378,7 @@
       },
       "2": {
         "type": "folder",
-        "path": "./samples/Hihats/2/",
+        "path": "samples/Hihats/2/",
         "children": [
           {
             "type": "file",
@@ -5474,7 +5474,7 @@
       },
       "3": {
         "type": "folder",
-        "path": "./samples/Hihats/3/",
+        "path": "samples/Hihats/3/",
         "children": [
           {
             "type": "file",
@@ -5560,7 +5560,7 @@
       },
       "4": {
         "type": "folder",
-        "path": "./samples/Hihats/4/",
+        "path": "samples/Hihats/4/",
         "children": [
           {
             "type": "file",
@@ -5631,7 +5631,7 @@
       },
       "5": {
         "type": "folder",
-        "path": "./samples/Hihats/5/",
+        "path": "samples/Hihats/5/",
         "children": [
           {
             "type": "file",
@@ -5752,7 +5752,7 @@
       },
       "6": {
         "type": "folder",
-        "path": "./samples/Hihats/6/",
+        "path": "samples/Hihats/6/",
         "children": [
           {
             "type": "file",
@@ -5808,7 +5808,7 @@
       },
       "7": {
         "type": "folder",
-        "path": "./samples/Hihats/7/",
+        "path": "samples/Hihats/7/",
         "children": [
           {
             "type": "file",
@@ -5954,7 +5954,7 @@
       },
       "8": {
         "type": "folder",
-        "path": "./samples/Hihats/8/",
+        "path": "samples/Hihats/8/",
         "children": [
           {
             "type": "file",
@@ -6337,11 +6337,11 @@
   },
   "Instruments": {
     "type": "folder",
-    "path": "./samples/Instruments/",
+    "path": "samples/Instruments/",
     "children": {
       "Accordion": {
         "type": "folder",
-        "path": "./samples/Instruments/Accordion/",
+        "path": "samples/Instruments/Accordion/",
         "children": [
           {
             "type": "file",
@@ -6387,7 +6387,7 @@
       },
       "Banjo": {
         "type": "folder",
-        "path": "./samples/Instruments/Banjo/",
+        "path": "samples/Instruments/Banjo/",
         "children": [
           {
             "type": "file",
@@ -6458,7 +6458,7 @@
       },
       "Bassoon": {
         "type": "folder",
-        "path": "./samples/Instruments/Bassoon/",
+        "path": "samples/Instruments/Bassoon/",
         "children": [
           {
             "type": "file",
@@ -6559,7 +6559,7 @@
       },
       "Bclar": {
         "type": "folder",
-        "path": "./samples/Instruments/Bclar/",
+        "path": "samples/Instruments/Bclar/",
         "children": [
           {
             "type": "file",
@@ -6610,7 +6610,7 @@
       },
       "Bongos": {
         "type": "folder",
-        "path": "./samples/Instruments/Bongos/",
+        "path": "samples/Instruments/Bongos/",
         "children": [
           {
             "type": "file",
@@ -6651,7 +6651,7 @@
       },
       "Celesta": {
         "type": "folder",
-        "path": "./samples/Instruments/Celesta/",
+        "path": "samples/Instruments/Celesta/",
         "children": [
           {
             "type": "file",
@@ -6737,7 +6737,7 @@
       },
       "Cello": {
         "type": "folder",
-        "path": "./samples/Instruments/Cello/",
+        "path": "samples/Instruments/Cello/",
         "children": [
           {
             "type": "file",
@@ -6753,7 +6753,7 @@
       },
       "Clarinet": {
         "type": "folder",
-        "path": "./samples/Instruments/Clarinet/",
+        "path": "samples/Instruments/Clarinet/",
         "children": {
           "0": {
             "type": "file",
@@ -6892,7 +6892,7 @@
           },
           "Clar": {
             "type": "folder",
-            "path": "./samples/Instruments/Clarinet/Clar/",
+            "path": "samples/Instruments/Clarinet/Clar/",
             "children": [
               {
                 "type": "file",
@@ -6928,7 +6928,7 @@
           },
           "Clarnt": {
             "type": "folder",
-            "path": "./samples/Instruments/Clarinet/Clarnt/",
+            "path": "samples/Instruments/Clarinet/Clarnt/",
             "children": [
               {
                 "type": "file",
@@ -6991,7 +6991,7 @@
       },
       "Clave": {
         "type": "folder",
-        "path": "./samples/Instruments/Clave/",
+        "path": "samples/Instruments/Clave/",
         "children": [
           {
             "type": "file",
@@ -7062,7 +7062,7 @@
       },
       "Conga": {
         "type": "folder",
-        "path": "./samples/Instruments/Conga/",
+        "path": "samples/Instruments/Conga/",
         "children": [
           {
             "type": "file",
@@ -7213,7 +7213,7 @@
       },
       "Cornet": {
         "type": "folder",
-        "path": "./samples/Instruments/Cornet/",
+        "path": "samples/Instruments/Cornet/",
         "children": [
           {
             "type": "file",
@@ -7269,7 +7269,7 @@
       },
       "Electronic": {
         "type": "folder",
-        "path": "./samples/Instruments/Electronic/",
+        "path": "samples/Instruments/Electronic/",
         "children": [
           {
             "type": "file",
@@ -7285,7 +7285,7 @@
       },
       "Flute": {
         "type": "folder",
-        "path": "./samples/Instruments/Flute/",
+        "path": "samples/Instruments/Flute/",
         "children": {
           "0": {
             "type": "file",
@@ -7414,7 +7414,7 @@
           },
           "Flute-1": {
             "type": "folder",
-            "path": "./samples/Instruments/Flute/Flute-1/",
+            "path": "samples/Instruments/Flute/Flute-1/",
             "children": [
               {
                 "type": "file",
@@ -7470,7 +7470,7 @@
           },
           "Flute-breathy": {
             "type": "folder",
-            "path": "./samples/Instruments/Flute/Flute-breathy/",
+            "path": "samples/Instruments/Flute/Flute-breathy/",
             "children": [
               {
                 "type": "file",
@@ -7511,7 +7511,7 @@
           },
           "Flute-vibrato": {
             "type": "folder",
-            "path": "./samples/Instruments/Flute/Flute-vibrato/",
+            "path": "samples/Instruments/Flute/Flute-vibrato/",
             "children": [
               {
                 "type": "file",
@@ -7564,7 +7564,7 @@
       },
       "Glockenspiel": {
         "type": "folder",
-        "path": "./samples/Instruments/Glockenspiel/",
+        "path": "samples/Instruments/Glockenspiel/",
         "children": [
           {
             "type": "file",
@@ -7620,11 +7620,11 @@
       },
       "Guitars": {
         "type": "folder",
-        "path": "./samples/Instruments/Guitars/",
+        "path": "samples/Instruments/Guitars/",
         "children": {
           "12-String-Guitar": {
             "type": "folder",
-            "path": "./samples/Instruments/Guitars/12-String-Guitar/",
+            "path": "samples/Instruments/Guitars/12-String-Guitar/",
             "children": [
               {
                 "type": "file",
@@ -7695,7 +7695,7 @@
           },
           "Aoustic-Guitar": {
             "type": "folder",
-            "path": "./samples/Instruments/Guitars/Aoustic-Guitar/",
+            "path": "samples/Instruments/Guitars/Aoustic-Guitar/",
             "children": [
               {
                 "type": "file",
@@ -7886,7 +7886,7 @@
           },
           "Aoustic-Guitar-1": {
             "type": "folder",
-            "path": "./samples/Instruments/Guitars/Aoustic-Guitar-1/",
+            "path": "samples/Instruments/Guitars/Aoustic-Guitar-1/",
             "children": [
               {
                 "type": "file",
@@ -7937,7 +7937,7 @@
           },
           "Electric-Guitar": {
             "type": "folder",
-            "path": "./samples/Instruments/Guitars/Electric-Guitar/",
+            "path": "samples/Instruments/Guitars/Electric-Guitar/",
             "children": [
               {
                 "type": "file",
@@ -8028,7 +8028,7 @@
           },
           "Jazz-Guitar": {
             "type": "folder",
-            "path": "./samples/Instruments/Guitars/Jazz-Guitar/",
+            "path": "samples/Instruments/Guitars/Jazz-Guitar/",
             "children": [
               {
                 "type": "file",
@@ -8109,7 +8109,7 @@
           },
           "Nylon-Guitar": {
             "type": "folder",
-            "path": "./samples/Instruments/Guitars/Nylon-Guitar/",
+            "path": "samples/Instruments/Guitars/Nylon-Guitar/",
             "children": [
               {
                 "type": "file",
@@ -8262,7 +8262,7 @@
       },
       "Harmonium": {
         "type": "folder",
-        "path": "./samples/Instruments/Harmonium/",
+        "path": "samples/Instruments/Harmonium/",
         "children": [
           {
             "type": "file",
@@ -8458,7 +8458,7 @@
       },
       "Harp": {
         "type": "folder",
-        "path": "./samples/Instruments/Harp/",
+        "path": "samples/Instruments/Harp/",
         "children": [
           {
             "type": "file",
@@ -8579,11 +8579,11 @@
       },
       "Horn": {
         "type": "folder",
-        "path": "./samples/Instruments/Horn/",
+        "path": "samples/Instruments/Horn/",
         "children": {
           "Flugel": {
             "type": "folder",
-            "path": "./samples/Instruments/Horn/Flugel/",
+            "path": "samples/Instruments/Horn/Flugel/",
             "children": [
               {
                 "type": "file",
@@ -8639,7 +8639,7 @@
           },
           "HandMute": {
             "type": "folder",
-            "path": "./samples/Instruments/Horn/HandMute/",
+            "path": "samples/Instruments/Horn/HandMute/",
             "children": [
               {
                 "type": "file",
@@ -8670,7 +8670,7 @@
           },
           "Sordine": {
             "type": "folder",
-            "path": "./samples/Instruments/Horn/Sordine/",
+            "path": "samples/Instruments/Horn/Sordine/",
             "children": [
               {
                 "type": "file",
@@ -8713,7 +8713,7 @@
       },
       "Marimba": {
         "type": "folder",
-        "path": "./samples/Instruments/Marimba/",
+        "path": "samples/Instruments/Marimba/",
         "children": [
           {
             "type": "file",
@@ -8804,11 +8804,11 @@
       },
       "Oboe": {
         "type": "folder",
-        "path": "./samples/Instruments/Oboe/",
+        "path": "samples/Instruments/Oboe/",
         "children": {
           "Oboe1": {
             "type": "folder",
-            "path": "./samples/Instruments/Oboe/Oboe1/",
+            "path": "samples/Instruments/Oboe/Oboe1/",
             "children": [
               {
                 "type": "file",
@@ -8849,7 +8849,7 @@
           },
           "Oboe2": {
             "type": "folder",
-            "path": "./samples/Instruments/Oboe/Oboe2/",
+            "path": "samples/Instruments/Oboe/Oboe2/",
             "children": [
               {
                 "type": "file",
@@ -8892,11 +8892,11 @@
       },
       "Organs": {
         "type": "folder",
-        "path": "./samples/Instruments/Organs/",
+        "path": "samples/Instruments/Organs/",
         "children": {
           "Church-Organ": {
             "type": "folder",
-            "path": "./samples/Instruments/Organs/Church-Organ/",
+            "path": "samples/Instruments/Organs/Church-Organ/",
             "children": [
               {
                 "type": "file",
@@ -8987,7 +8987,7 @@
           },
           "House-Organ": {
             "type": "folder",
-            "path": "./samples/Instruments/Organs/House-Organ/",
+            "path": "samples/Instruments/Organs/House-Organ/",
             "children": [
               {
                 "type": "file",
@@ -9140,11 +9140,11 @@
       },
       "Pianos": {
         "type": "folder",
-        "path": "./samples/Instruments/Pianos/",
+        "path": "samples/Instruments/Pianos/",
         "children": {
           "Grand-Piano": {
             "type": "folder",
-            "path": "./samples/Instruments/Pianos/Grand-Piano/",
+            "path": "samples/Instruments/Pianos/Grand-Piano/",
             "children": [
               {
                 "type": "file",
@@ -9340,7 +9340,7 @@
           },
           "Lofi-Piano": {
             "type": "folder",
-            "path": "./samples/Instruments/Pianos/Lofi-Piano/",
+            "path": "samples/Instruments/Pianos/Lofi-Piano/",
             "children": [
               {
                 "type": "file",
@@ -9496,7 +9496,7 @@
           },
           "Piano": {
             "type": "folder",
-            "path": "./samples/Instruments/Pianos/Piano/",
+            "path": "samples/Instruments/Pianos/Piano/",
             "children": [
               {
                 "type": "file",
@@ -9927,7 +9927,7 @@
           },
           "YamahaH": {
             "type": "folder",
-            "path": "./samples/Instruments/Pianos/YamahaH/",
+            "path": "samples/Instruments/Pianos/YamahaH/",
             "children": [
               {
                 "type": "file",
@@ -10085,11 +10085,11 @@
       },
       "Saxophone": {
         "type": "folder",
-        "path": "./samples/Instruments/Saxophone/",
+        "path": "samples/Instruments/Saxophone/",
         "children": {
           "Alto-Sax": {
             "type": "folder",
-            "path": "./samples/Instruments/Saxophone/Alto-Sax/",
+            "path": "samples/Instruments/Saxophone/Alto-Sax/",
             "children": [
               {
                 "type": "file",
@@ -10125,7 +10125,7 @@
           },
           "Leonard-Sax": {
             "type": "folder",
-            "path": "./samples/Instruments/Saxophone/Leonard-Sax/",
+            "path": "samples/Instruments/Saxophone/Leonard-Sax/",
             "children": [
               {
                 "type": "file",
@@ -10156,7 +10156,7 @@
           },
           "Phrase-Sax": {
             "type": "folder",
-            "path": "./samples/Instruments/Saxophone/Phrase-Sax/",
+            "path": "samples/Instruments/Saxophone/Phrase-Sax/",
             "children": [
               {
                 "type": "file",
@@ -10172,7 +10172,7 @@
           },
           "Saxophone": {
             "type": "folder",
-            "path": "./samples/Instruments/Saxophone/Saxophone/",
+            "path": "samples/Instruments/Saxophone/Saxophone/",
             "children": [
               {
                 "type": "file",
@@ -10338,7 +10338,7 @@
           },
           "Soprano-Sax": {
             "type": "folder",
-            "path": "./samples/Instruments/Saxophone/Soprano-Sax/",
+            "path": "samples/Instruments/Saxophone/Soprano-Sax/",
             "children": [
               {
                 "type": "file",
@@ -10426,7 +10426,7 @@
       },
       "Sicus": {
         "type": "folder",
-        "path": "./samples/Instruments/Sicus/",
+        "path": "samples/Instruments/Sicus/",
         "children": [
           {
             "type": "file",
@@ -10447,7 +10447,7 @@
       },
       "Snares": {
         "type": "folder",
-        "path": "./samples/Instruments/Snares/",
+        "path": "samples/Instruments/Snares/",
         "children": [
           {
             "type": "file",
@@ -10883,7 +10883,7 @@
       },
       "Strings": {
         "type": "folder",
-        "path": "./samples/Instruments/Strings/",
+        "path": "samples/Instruments/Strings/",
         "children": [
           {
             "type": "file",
@@ -10999,7 +10999,7 @@
       },
       "Tambourine": {
         "type": "folder",
-        "path": "./samples/Instruments/Tambourine/",
+        "path": "samples/Instruments/Tambourine/",
         "children": [
           {
             "type": "file",
@@ -11030,7 +11030,7 @@
       },
       "Timbales": {
         "type": "folder",
-        "path": "./samples/Instruments/Timbales/",
+        "path": "samples/Instruments/Timbales/",
         "children": [
           {
             "type": "file",
@@ -11116,7 +11116,7 @@
       },
       "Timpani": {
         "type": "folder",
-        "path": "./samples/Instruments/Timpani/",
+        "path": "samples/Instruments/Timpani/",
         "children": [
           {
             "type": "file",
@@ -11252,7 +11252,7 @@
       },
       "Toms": {
         "type": "folder",
-        "path": "./samples/Instruments/Toms/",
+        "path": "samples/Instruments/Toms/",
         "children": [
           {
             "type": "file",
@@ -11423,7 +11423,7 @@
       },
       "Triangle": {
         "type": "folder",
-        "path": "./samples/Instruments/Triangle/",
+        "path": "samples/Instruments/Triangle/",
         "children": [
           {
             "type": "file",
@@ -11504,11 +11504,11 @@
       },
       "Trombone": {
         "type": "folder",
-        "path": "./samples/Instruments/Trombone/",
+        "path": "samples/Instruments/Trombone/",
         "children": {
           "BroadBone": {
             "type": "folder",
-            "path": "./samples/Instruments/Trombone/BroadBone/",
+            "path": "samples/Instruments/Trombone/BroadBone/",
             "children": [
               {
                 "type": "file",
@@ -11559,7 +11559,7 @@
           },
           "Tbone": {
             "type": "folder",
-            "path": "./samples/Instruments/Trombone/Tbone/",
+            "path": "samples/Instruments/Trombone/Tbone/",
             "children": [
               {
                 "type": "file",
@@ -11620,7 +11620,7 @@
           },
           "Trombone1": {
             "type": "folder",
-            "path": "./samples/Instruments/Trombone/Trombone1/",
+            "path": "samples/Instruments/Trombone/Trombone1/",
             "children": [
               {
                 "type": "file",
@@ -11668,7 +11668,7 @@
       },
       "Trumpet": {
         "type": "folder",
-        "path": "./samples/Instruments/Trumpet/",
+        "path": "samples/Instruments/Trumpet/",
         "children": {
           "0": {
             "type": "file",
@@ -11702,7 +11702,7 @@
           },
           "BTrp": {
             "type": "folder",
-            "path": "./samples/Instruments/Trumpet/BTrp/",
+            "path": "samples/Instruments/Trumpet/BTrp/",
             "children": [
               {
                 "type": "file",
@@ -11753,7 +11753,7 @@
           },
           "BTrp2": {
             "type": "folder",
-            "path": "./samples/Instruments/Trumpet/BTrp2/",
+            "path": "samples/Instruments/Trumpet/BTrp2/",
             "children": [
               {
                 "type": "file",
@@ -11804,7 +11804,7 @@
           },
           "Trumpt": {
             "type": "folder",
-            "path": "./samples/Instruments/Trumpet/Trumpt/",
+            "path": "samples/Instruments/Trumpet/Trumpt/",
             "children": [
               {
                 "type": "file",
@@ -11857,7 +11857,7 @@
       },
       "Tuba": {
         "type": "folder",
-        "path": "./samples/Instruments/Tuba/",
+        "path": "samples/Instruments/Tuba/",
         "children": [
           {
             "type": "file",
@@ -11923,11 +11923,11 @@
       },
       "Viola": {
         "type": "folder",
-        "path": "./samples/Instruments/Viola/",
+        "path": "samples/Instruments/Viola/",
         "children": {
           "SViola": {
             "type": "folder",
-            "path": "./samples/Instruments/Viola/SViola/",
+            "path": "samples/Instruments/Viola/SViola/",
             "children": [
               {
                 "type": "file",
@@ -11998,7 +11998,7 @@
           },
           "SViola2": {
             "type": "folder",
-            "path": "./samples/Instruments/Viola/SViola2/",
+            "path": "samples/Instruments/Viola/SViola2/",
             "children": [
               {
                 "type": "file",
@@ -12069,7 +12069,7 @@
           },
           "SViola3": {
             "type": "folder",
-            "path": "./samples/Instruments/Viola/SViola3/",
+            "path": "samples/Instruments/Viola/SViola3/",
             "children": [
               {
                 "type": "file",
@@ -12142,11 +12142,11 @@
       },
       "Violin": {
         "type": "folder",
-        "path": "./samples/Instruments/Violin/",
+        "path": "samples/Instruments/Violin/",
         "children": {
           "Violin-martellato": {
             "type": "folder",
-            "path": "./samples/Instruments/Violin/Violin-martellato/",
+            "path": "samples/Instruments/Violin/Violin-martellato/",
             "children": [
               {
                 "type": "file",
@@ -12272,7 +12272,7 @@
           },
           "Violin-vib": {
             "type": "folder",
-            "path": "./samples/Instruments/Violin/Violin-vib/",
+            "path": "samples/Instruments/Violin/Violin-vib/",
             "children": [
               {
                 "type": "file",
@@ -12383,7 +12383,7 @@
           },
           "Violin-vib-in": {
             "type": "folder",
-            "path": "./samples/Instruments/Violin/Violin-vib-in/",
+            "path": "samples/Instruments/Violin/Violin-vib-in/",
             "children": [
               {
                 "type": "file",
@@ -12484,7 +12484,7 @@
           },
           "Violin4": {
             "type": "folder",
-            "path": "./samples/Instruments/Violin/Violin4/",
+            "path": "samples/Instruments/Violin/Violin4/",
             "children": [
               {
                 "type": "file",
@@ -12597,7 +12597,7 @@
       },
       "Voice": {
         "type": "folder",
-        "path": "./samples/Instruments/Voice/",
+        "path": "samples/Instruments/Voice/",
         "children": [
           {
             "type": "file",
@@ -12613,7 +12613,7 @@
       },
       "Xylophone": {
         "type": "folder",
-        "path": "./samples/Instruments/Xylophone/",
+        "path": "samples/Instruments/Xylophone/",
         "children": [
           {
             "type": "file",
@@ -12686,11 +12686,11 @@
   },
   "Kicks": {
     "type": "folder",
-    "path": "./samples/Kicks/",
+    "path": "samples/Kicks/",
     "children": {
       "1": {
         "type": "folder",
-        "path": "./samples/Kicks/1/",
+        "path": "samples/Kicks/1/",
         "children": [
           {
             "type": "file",
@@ -12736,7 +12736,7 @@
       },
       "2": {
         "type": "folder",
-        "path": "./samples/Kicks/2/",
+        "path": "samples/Kicks/2/",
         "children": [
           {
             "type": "file",
@@ -12777,7 +12777,7 @@
       },
       "3": {
         "type": "folder",
-        "path": "./samples/Kicks/3/",
+        "path": "samples/Kicks/3/",
         "children": [
           {
             "type": "file",
@@ -12823,7 +12823,7 @@
       },
       "4": {
         "type": "folder",
-        "path": "./samples/Kicks/4/",
+        "path": "samples/Kicks/4/",
         "children": [
           {
             "type": "file",
@@ -12859,7 +12859,7 @@
       },
       "5": {
         "type": "folder",
-        "path": "./samples/Kicks/5/",
+        "path": "samples/Kicks/5/",
         "children": [
           {
             "type": "file",
@@ -12895,7 +12895,7 @@
       },
       "6": {
         "type": "folder",
-        "path": "./samples/Kicks/6/",
+        "path": "samples/Kicks/6/",
         "children": [
           {
             "type": "file",
@@ -12981,7 +12981,7 @@
       },
       "7": {
         "type": "folder",
-        "path": "./samples/Kicks/7/",
+        "path": "samples/Kicks/7/",
         "children": [
           {
             "type": "file",
@@ -13117,7 +13117,7 @@
       },
       "8": {
         "type": "folder",
-        "path": "./samples/Kicks/8/",
+        "path": "samples/Kicks/8/",
         "children": [
           {
             "type": "file",
@@ -13173,7 +13173,7 @@
       },
       "9": {
         "type": "folder",
-        "path": "./samples/Kicks/9/",
+        "path": "samples/Kicks/9/",
         "children": [
           {
             "type": "file",
@@ -13229,7 +13229,7 @@
       },
       "10": {
         "type": "folder",
-        "path": "./samples/Kicks/10/",
+        "path": "samples/Kicks/10/",
         "children": [
           {
             "type": "file",
@@ -13270,7 +13270,7 @@
       },
       "11": {
         "type": "folder",
-        "path": "./samples/Kicks/11/",
+        "path": "samples/Kicks/11/",
         "children": [
           {
             "type": "file",
@@ -13311,7 +13311,7 @@
       },
       "12": {
         "type": "folder",
-        "path": "./samples/Kicks/12/",
+        "path": "samples/Kicks/12/",
         "children": [
           {
             "type": "file",
@@ -13337,7 +13337,7 @@
       },
       "13": {
         "type": "folder",
-        "path": "./samples/Kicks/13/",
+        "path": "samples/Kicks/13/",
         "children": [
           {
             "type": "file",
@@ -13368,7 +13368,7 @@
       },
       "14": {
         "type": "folder",
-        "path": "./samples/Kicks/14/",
+        "path": "samples/Kicks/14/",
         "children": [
           {
             "type": "file",
@@ -13404,7 +13404,7 @@
       },
       "15": {
         "type": "folder",
-        "path": "./samples/Kicks/15/",
+        "path": "samples/Kicks/15/",
         "children": [
           {
             "type": "file",
@@ -13525,7 +13525,7 @@
       },
       "16": {
         "type": "folder",
-        "path": "./samples/Kicks/16/",
+        "path": "samples/Kicks/16/",
         "children": [
           {
             "type": "file",
@@ -13651,7 +13651,7 @@
       },
       "17": {
         "type": "folder",
-        "path": "./samples/Kicks/17/",
+        "path": "samples/Kicks/17/",
         "children": [
           {
             "type": "file",
@@ -13682,7 +13682,7 @@
       },
       "18": {
         "type": "folder",
-        "path": "./samples/Kicks/18/",
+        "path": "samples/Kicks/18/",
         "children": [
           {
             "type": "file",
@@ -13773,7 +13773,7 @@
       },
       "19": {
         "type": "folder",
-        "path": "./samples/Kicks/19/",
+        "path": "samples/Kicks/19/",
         "children": [
           {
             "type": "file",
@@ -13869,7 +13869,7 @@
       },
       "20": {
         "type": "folder",
-        "path": "./samples/Kicks/20/",
+        "path": "samples/Kicks/20/",
         "children": [
           {
             "type": "file",
@@ -14325,7 +14325,7 @@
       },
       "21": {
         "type": "folder",
-        "path": "./samples/Kicks/21/",
+        "path": "samples/Kicks/21/",
         "children": [
           {
             "type": "file",
@@ -14833,7 +14833,7 @@
   },
   "Percs": {
     "type": "folder",
-    "path": "./samples/Percs/",
+    "path": "samples/Percs/",
     "children": [
       {
         "type": "file",
@@ -15589,11 +15589,11 @@
   },
   "Snares": {
     "type": "folder",
-    "path": "./samples/Snares/",
+    "path": "samples/Snares/",
     "children": {
       "1": {
         "type": "folder",
-        "path": "./samples/Snares/1/",
+        "path": "samples/Snares/1/",
         "children": [
           {
             "type": "file",
@@ -15639,7 +15639,7 @@
       },
       "2": {
         "type": "folder",
-        "path": "./samples/Snares/2/",
+        "path": "samples/Snares/2/",
         "children": [
           {
             "type": "file",
@@ -15725,7 +15725,7 @@
       },
       "3": {
         "type": "folder",
-        "path": "./samples/Snares/3/",
+        "path": "samples/Snares/3/",
         "children": [
           {
             "type": "file",
@@ -15866,7 +15866,7 @@
       },
       "4": {
         "type": "folder",
-        "path": "./samples/Snares/4/",
+        "path": "samples/Snares/4/",
         "children": [
           {
             "type": "file",
@@ -15912,7 +15912,7 @@
       },
       "5": {
         "type": "folder",
-        "path": "./samples/Snares/5/",
+        "path": "samples/Snares/5/",
         "children": [
           {
             "type": "file",
@@ -15988,7 +15988,7 @@
       },
       "6": {
         "type": "folder",
-        "path": "./samples/Snares/6/",
+        "path": "samples/Snares/6/",
         "children": [
           {
             "type": "file",
@@ -16089,7 +16089,7 @@
       },
       "7": {
         "type": "folder",
-        "path": "./samples/Snares/7/",
+        "path": "samples/Snares/7/",
         "children": [
           {
             "type": "file",
@@ -16320,7 +16320,7 @@
       },
       "8": {
         "type": "folder",
-        "path": "./samples/Snares/8/",
+        "path": "samples/Snares/8/",
         "children": [
           {
             "type": "file",
@@ -16406,7 +16406,7 @@
       },
       "9": {
         "type": "folder",
-        "path": "./samples/Snares/9/",
+        "path": "samples/Snares/9/",
         "children": [
           {
             "type": "file",
@@ -16452,7 +16452,7 @@
       },
       "10": {
         "type": "folder",
-        "path": "./samples/Snares/10/",
+        "path": "samples/Snares/10/",
         "children": [
           {
             "type": "file",
@@ -16543,7 +16543,7 @@
       },
       "11": {
         "type": "folder",
-        "path": "./samples/Snares/11/",
+        "path": "samples/Snares/11/",
         "children": [
           {
             "type": "file",
@@ -16629,7 +16629,7 @@
       },
       "12": {
         "type": "folder",
-        "path": "./samples/Snares/12/",
+        "path": "samples/Snares/12/",
         "children": [
           {
             "type": "file",
@@ -16730,7 +16730,7 @@
       },
       "13": {
         "type": "folder",
-        "path": "./samples/Snares/13/",
+        "path": "samples/Snares/13/",
         "children": [
           {
             "type": "file",
@@ -16831,7 +16831,7 @@
       },
       "14": {
         "type": "folder",
-        "path": "./samples/Snares/14/",
+        "path": "samples/Snares/14/",
         "children": [
           {
             "type": "file",
@@ -16872,7 +16872,7 @@
       },
       "15": {
         "type": "folder",
-        "path": "./samples/Snares/15/",
+        "path": "samples/Snares/15/",
         "children": [
           {
             "type": "file",
@@ -16928,7 +16928,7 @@
       },
       "16": {
         "type": "folder",
-        "path": "./samples/Snares/16/",
+        "path": "samples/Snares/16/",
         "children": [
           {
             "type": "file",
@@ -17009,7 +17009,7 @@
       },
       "17": {
         "type": "folder",
-        "path": "./samples/Snares/17/",
+        "path": "samples/Snares/17/",
         "children": [
           {
             "type": "file",
@@ -17060,7 +17060,7 @@
       },
       "18": {
         "type": "folder",
-        "path": "./samples/Snares/18/",
+        "path": "samples/Snares/18/",
         "children": [
           {
             "type": "file",
@@ -17111,7 +17111,7 @@
       },
       "19": {
         "type": "folder",
-        "path": "./samples/Snares/19/",
+        "path": "samples/Snares/19/",
         "children": [
           {
             "type": "file",
@@ -18259,11 +18259,11 @@
   },
   "Synths": {
     "type": "folder",
-    "path": "./samples/Synths/",
+    "path": "samples/Synths/",
     "children": {
       "Choir-Synth": {
         "type": "folder",
-        "path": "./samples/Synths/Choir-Synth/",
+        "path": "samples/Synths/Choir-Synth/",
         "children": [
           {
             "type": "file",
@@ -18356,7 +18356,7 @@
   },
   "Tabla": {
     "type": "folder",
-    "path": "./samples/Tabla/",
+    "path": "samples/Tabla/",
     "children": [
       {
         "type": "file",
@@ -18767,7 +18767,7 @@
   },
   "Toms": {
     "type": "folder",
-    "path": "./samples/Toms/",
+    "path": "samples/Toms/",
     "children": [
       {
         "type": "file",
@@ -18798,7 +18798,7 @@
   },
   "Vocals": {
     "type": "folder",
-    "path": "./samples/Vocals/",
+    "path": "samples/Vocals/",
     "children": [
       {
         "type": "file",
