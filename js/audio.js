@@ -1,5 +1,3 @@
-//audio.js
-
 function addClipToTrack(track, clip) {
     track.clips.push(clip);
     renderClip(track, clip);
@@ -64,8 +62,7 @@ async function loadAudioFileAndCreateTrack(file) {
 
 function syncInstrumentStepsToTimeline() {
     const bpm = getBPM();
-    const secondsPerStep = getSecondsPerStep(); //(60 / bpm) / (resolution / 4);
-    
+    const secondsPerStep = getSecondsPerStep();
     const requiredSteps = Math.ceil(totalSeconds / getSecondsPerStep());
 
     audioTracks.forEach(track => {
@@ -182,27 +179,14 @@ function drawClipWaveform(clip, canvas, pps) {
         if (remainingTime <= 0) break;
 
         const drawDuration = Math.min(baseTrimDuration, remainingTime);
-
-        const startSample = Math.floor(
-            clip.trimStart * sampleRate
-        );
-
-        const endSample = Math.floor(
-            (clip.trimStart + drawDuration) * sampleRate
-        );
-
-        const sliced = channelData.subarray(
-            startSample,
-            Math.min(endSample, channelData.length)
-        );
-
+        const startSample = Math.floor(clip.trimStart * sampleRate);
+        const endSample = Math.floor((clip.trimStart + drawDuration) * sampleRate);
+        const sliced = channelData.subarray(startSample,Math.min(endSample, channelData.length));
         const loopX = loopStartTime * pps;
         const loopWidth = drawDuration * pps;
-
         const samplesPerPixel = sliced.length / loopWidth;
 
         for (let x = 0; x < loopWidth; x++) {
-
             const sampleIndexStart = Math.floor(x * samplesPerPixel);
             const sampleIndexEnd = Math.floor((x + 1) * samplesPerPixel);
 
@@ -275,10 +259,7 @@ function drawClipWaveform_L(clip, canvas, pps) {
         const startSample = Math.floor(clip.trimStart * sampleRate);
         const endSample = Math.floor((clip.trimStart + drawDuration) * sampleRate);
 
-        const sliced = channelData.subarray(
-            startSample,
-            Math.min(endSample, channelData.length)
-        );
+        const sliced = channelData.subarray(startSample,Math.min(endSample, channelData.length));
 
         const loopWidth = drawDuration * pps;
         const samplesPerPixel = sliced.length / loopWidth;
@@ -315,13 +296,11 @@ function drawClipWaveform_N(clip, canvas, pps) {
     if (!canvas || !clip?.buffer) return;
 
     const ctx = canvas.getContext('2d');
-
-    // ─── Canvas size = visible area (viewport width) ──────────────────────────
     const container = canvas.parentElement;
     if (!container) return;
 
     const viewWidth  = container.clientWidth;
-    const viewHeight = 60; // or container.clientHeight
+    const viewHeight = 60;
 
     canvas.width  = viewWidth;
     canvas.height = viewHeight;
@@ -334,10 +313,9 @@ function drawClipWaveform_N(clip, canvas, pps) {
 
     ctx.fillStyle = clip.color?.wave || '#4caf50';
 
-    // ─── Get current visible time range ───────────────────────────────────────
     const scrollLeft = container.scrollLeft;
-    const visibleStartTime = scrollLeft / pps;               // seconds from clip start
-    const visibleDuration  = viewWidth / pps;                // how many seconds visible
+    const visibleStartTime = scrollLeft / pps;
+    const visibleDuration  = viewWidth / pps;
 
     const visibleEndTime = visibleStartTime + visibleDuration;
 
@@ -349,7 +327,6 @@ function drawClipWaveform_N(clip, canvas, pps) {
     let currentX    = 0;
 
     while (currentTime < visibleEndTime && currentX < viewWidth) {
-        // Position inside one trimmed loop
         const timeInLoop = currentTime % loopLen;
         const absTime    = clip.trimStart + timeInLoop;
 
@@ -396,7 +373,6 @@ function drawClipWaveform_N(clip, canvas, pps) {
         currentTime += pixelsThis / pps;
     }
 
-    // Optional: debug center line
     ctx.strokeStyle = 'rgba(255,255,255,0.15)';
     ctx.beginPath();
     ctx.moveTo(0, centerY);
@@ -670,7 +646,6 @@ function openClipContextMenu(x, y, track, clip, isMobile = false) {
 function openEffectsPopup(track, clip) {
     if (!clip) return;
 
-    // Ensure effects object exists with defaults
     clip.effects ??= {};
     clip.effects.volume ??= 1;
     clip.effects.pitch ??= 1;
@@ -706,7 +681,6 @@ function openEffectsPopup(track, clip) {
     const body = document.createElement('div');
     body.className = 'popup-body';
 
-    // Volume
     body.appendChild(createRNSlider({
         label: 'Volume',
         value: clip.effects.volume,
@@ -719,7 +693,6 @@ function openEffectsPopup(track, clip) {
         onCommit: (b, a) => pushHistory({ undo() { clip.effects.volume = b; }, redo() { clip.effects.volume = a; } })
     }));
 
-    // Pitch
     body.appendChild(createRNSlider({
         label: 'Pitch',
         value: clip.effects.pitch,
@@ -732,7 +705,6 @@ function openEffectsPopup(track, clip) {
         onCommit: (b, a) => pushHistory({ undo() { clip.effects.pitch = b; }, redo() { clip.effects.pitch = a; } })
     }));
 
-    // Pan
     body.appendChild(createRNSlider({
         label: 'Pan',
         value: clip.effects.pan,
@@ -748,7 +720,6 @@ function openEffectsPopup(track, clip) {
         onCommit: (b, a) => pushHistory({ undo() { clip.effects.pan = b; }, redo() { clip.effects.pan = a; } })
     }));
 
-    // Delay Time
     body.appendChild(createRNSlider({
         label: 'Delay Time (s)',
         value: clip.effects.delayTime,
@@ -761,7 +732,6 @@ function openEffectsPopup(track, clip) {
         onCommit: (b, a) => pushHistory({ undo() { clip.effects.delayTime = b; }, redo() { clip.effects.delayTime = a; } })
     }));
 
-    // Delay Mix
     body.appendChild(createRNSlider({
         label: 'Delay Mix',
         value: clip.effects.delayMix,
@@ -774,7 +744,6 @@ function openEffectsPopup(track, clip) {
         onCommit: (b, a) => pushHistory({ undo() { clip.effects.delayMix = b; }, redo() { clip.effects.delayMix = a; } })
     }));
 
-    // Chorus
     body.appendChild(createRNSlider({
         label: 'Chorus',
         value: clip.effects.chorus,
@@ -787,11 +756,9 @@ function openEffectsPopup(track, clip) {
         onCommit: (b, a) => pushHistory({ undo() { clip.effects.chorus = b; }, redo() { clip.effects.chorus = a; } })
     }));
 
-    // Echo Preset (select)
     const echoOptions = Object.keys(ECHO_PRESETS || { off: 'Off', short: 'Short', medium: 'Medium', long: 'Long' });
     body.appendChild(createSelect('Echo', echoOptions, clip.effects.echoPreset, v => clip.effects.echoPreset = v));
 
-    // Fade In
     body.appendChild(createRNSlider({
         label: 'Fade In (s)',
         value: clip.effects.fadeIn,
@@ -804,7 +771,6 @@ function openEffectsPopup(track, clip) {
         onCommit: (b, a) => pushHistory({ undo() { clip.effects.fadeIn = b; }, redo() { clip.effects.fadeIn = a; } })
     }));
 
-    // Fade Out
     body.appendChild(createRNSlider({
         label: 'Fade Out (s)',
         value: clip.effects.fadeOut,
@@ -1255,57 +1221,48 @@ function applyEnvelope(gainNode, track, startTime, stepDuration, velocity = 1) {
 
 function createChorusNode(ctx, options = {}) {
     const {
-        rate = 0.5,        // LFO frequency (Hz)
-        depth = 0.5,       // modulation depth (0–1)
-        delayTime = 0.03,  // base delay time (seconds)
-        feedback = 0.3,    // feedback amount (0–1)
-        mix = 0.5          // wet/dry mix (0 = dry, 1 = wet)
+        rate = 0.5,
+        depth = 0.5,
+        delayTime = 0.03,
+        feedback = 0.3,
+        mix = 0.5
     } = options;
 
-    // Core nodes
     const input = ctx.createGain();
     const output = ctx.createGain();
     const dryGain = ctx.createGain();
     const wetGain = ctx.createGain();
-
-    // Mono delay line (we'll split stereo later if needed)
     const delay = ctx.createDelay(0.1);
     delay.delayTime.value = delayTime;
 
-    // LFO for modulating delay time
     const lfo = ctx.createOscillator();
     lfo.type = 'sine';
     lfo.frequency.value = rate;
 
     const lfoGain = ctx.createGain();
-    lfoGain.gain.value = depth * 0.005; // scale depth to small time variation
+    lfoGain.gain.value = depth * 0.005;
 
-    // Feedback loop
     const feedbackGain = ctx.createGain();
     feedbackGain.gain.value = feedback;
 
-    // Routing
     input.connect(dryGain);
     dryGain.connect(output);
 
     input.connect(delay);
     delay.connect(feedbackGain);
-    feedbackGain.connect(delay); // feedback loop
+    feedbackGain.connect(delay);
 
-    // LFO modulates delay time
     lfo.connect(lfoGain);
     lfoGain.connect(delay.delayTime);
 
     delay.connect(wetGain);
     wetGain.connect(output);
 
-    // Set initial mix
     dryGain.gain.value = 1 - mix;
     wetGain.gain.value = mix;
 
     lfo.start();
 
-    // Return the node with controls
     const chorusNode = {
         input,
         output,
@@ -1316,7 +1273,7 @@ function createChorusNode(ctx, options = {}) {
         disconnect() {
             output.disconnect();
         },
-        // Controls
+        
         setRate(value) { lfo.frequency.value = value; },
         setDepth(value) { lfoGain.gain.value = value * 0.005; },
         setDelayTime(value) { delay.delayTime.value = value; },
