@@ -110,11 +110,11 @@ mr-daw/
 │
 ├── js/
 │   ├── ui/
-|   |   ├── circleKnob.js
-|   |   ├── classicKnob.js
-|   |   ├── effect_panels.js
-|   |   ├── rn_slider.js
-|   |   └── sliderAdapter.js
+│   │   ├── circleKnob.js
+│   │   ├── classicKnob.js
+│   │   ├── effect_panels.js
+│   │   ├── rn_slider.js
+│   │   └── sliderAdapter.js
 │   ├── audio.js
 │   ├── beatMarkers.js
 │   ├── effects.js
