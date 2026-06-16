@@ -1,5 +1,3 @@
-// lasso.js
-
 let lassoState = null;
 let lassoBox = null;
 let startX = 0;
@@ -118,10 +116,6 @@ function selectItemsInsideSelectionBox(box) {
     audioTracks.forEach((track, trackIdx) => {
         const rect = track.trackElement.getBoundingClientRect();
         const contentRect = timelineContent.getBoundingClientRect();
-
-        //const trackTop = rect.top - contentRect.top;
-        //const trackBottom = trackTop + rect.height;
-        
         const trackTop = rect.top - contentRect.top + timelineScroll.scrollTop;
         const trackBottom = trackTop + rect.height;
 
@@ -184,7 +178,7 @@ document.addEventListener('mousedown', e => {
 
     const rect = timelineContent.getBoundingClientRect();
     const p = getTimelineCoords(e.clientX, e.clientY);
-    const x = p.x; //e.clientX - rect.left + timelineScroll.scrollLeft;
+    const x = p.x;
     const stepWidth = getStepWidth();
     
     originalTrackStates = {};
@@ -240,7 +234,7 @@ document.addEventListener('mousemove', e => {
 
     const rect = timelineContent.getBoundingClientRect();
     const p = getTimelineCoords(e.clientX, e.clientY);
-    const x = p.x; //e.clientX - rect.left + timelineScroll.scrollLeft;
+    const x = p.x;
     const stepWidth = getStepWidth();
 
     const step = Math.floor(x / stepWidth);
@@ -547,7 +541,7 @@ document.addEventListener('mousedown', e => {
 
     const rect = timelineContent.getBoundingClientRect();
     const p = getTimelineCoords(e.clientX, e.clientY);
-    const x = p.x; //e.clientX - rect.left + timelineScroll.scrollLeft;
+    const x = p.x;
     const stepWidth = getStepWidth();
     
     originalTrackStates = {};
@@ -603,7 +597,7 @@ document.addEventListener('mousemove', e => {
 
     const rect = timelineContent.getBoundingClientRect();
     const p = getTimelineCoords(e.clientX, e.clientY);
-    const x = p.x; //e.clientX - rect.left + timelineScroll.scrollLeft;
+    const x = p.x;
     const stepWidth = getStepWidth();
 
     const step = Math.floor(x / stepWidth);
