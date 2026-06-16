@@ -304,7 +304,7 @@ async function loadDrumPresets() {
     try {
         const res = await fetch('./drumkits.json');
         DRUM_PRESETS = await res.json();
-        normalizePaths(libraryData);
+        normalizePaths(DRUM_PRESETS);
     } catch (err) {
         console.error("Failed to load drum presets", err);
     }
