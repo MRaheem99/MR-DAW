@@ -776,10 +776,10 @@ async function loadLibraryUI(libPopup, container, sampleList, onSelect) {
     
     if (cachedSampleFiles) {
         libraryData = cachedSampleFiles;
-    }else{
-        response = await fetch('./get_samples.php');
+    } else {
+        response = await fetch('./samples.json');
         libraryData = await response.json();
-        cachedSampleFiles = libraryData;
+        cachedSampleFiles =  libraryData;
     }
 
     let currentPathStack = [];
