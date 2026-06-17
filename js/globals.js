@@ -141,7 +141,7 @@ window.isMagnetActive = false;
 window.audioLassoSelection = [];
 window.audioPasteTarget = null;
 window.audioInsertTarget = {time: null, trackIdx: null};
-window.loadedLibrarySamples = window.loadedLibrarySamples || {};
+window.loadedLibrarysmaples = window.loadedLibrarysmaples || {};
 
 let cpuMeter = {
     schedulerTime: 0,
@@ -261,15 +261,15 @@ const ECHO_PRESETS = {
     }
 };
 
-const DEFAULT_DRUM_SAMPLES = {
-    kick: "./samples/Kicks/21/Kick-002.wav",
-    snare: "./samples/Snares/19/Snare-015.wav",
-    hihat: "./samples/Hihats/8/Hihat-001.wav",
-    clap: "./samples/Claps/Clap-002.wav",
-    tom: "./samples/Toms/Tom-004.wav",
-    perc: "./samples/Percs/Perc-001.wav",
-    ride: "./samples/Percs/Perc-040.wav",
-    crash: "./samples/Cymbals/Cymbal-003.wav"
+const DEFAULT_DRUM_smaples = {
+    kick: "./smaples/Kicks/21/Kick-002.wav",
+    snare: "./smaples/Snares/19/Snare-015.wav",
+    hihat: "./smaples/Hihats/8/Hihat-001.wav",
+    clap: "./smaples/Claps/Clap-002.wav",
+    tom: "./smaples/Toms/Tom-004.wav",
+    perc: "./smaples/Percs/Perc-001.wav",
+    ride: "./smaples/Percs/Perc-040.wav",
+    crash: "./smaples/Cymbals/Cymbal-003.wav"
 };
 
 let DRUM_PRESETS = {};
