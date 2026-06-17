@@ -775,13 +775,9 @@ async function loadLibraryUI(libPopup, container, sampleList, onSelect) {
     if (cachedSampleFiles) {
         libraryData = cachedSampleFiles;
     } else {
-        //const res = await fetch('./samples.json');
-        //libraryData = await res.json();
-        //cachedSampleFiles =  libraryData;
-        fetch("samples/Basses/Acid-Bass/029-AcidBass.wav").then(r=>{
-            console.log(r.status,r.url);
-            return r.arrayBuffer();
-        }).then(b=>console.log("size",b.byteLength)).catch(console.error);
+        const res = await fetch('./samples.json');
+        libraryData = await res.json();
+        cachedSampleFiles =  libraryData;
     }
 
     let currentPathStack = [];
@@ -1061,7 +1057,7 @@ async function loadLibraryUI(libPopup, container, sampleList, onSelect) {
 
 async function loadLibrarySample(url, fileName, onSelect) {
     try {
-        const response = await fetch(url);
+        const response = await fetch('samples/Snares/19/Snare-015.wav');
         const arrayBuffer = await response.arrayBuffer();
         const decodedBuffer = await audioContext.decodeAudioData(arrayBuffer);
         onSelect(decodedBuffer, fileName, url);
@@ -1074,7 +1070,7 @@ async function loadLibrarySample(url, fileName, onSelect) {
 async function previewLibraryFile(url) {
     stopGlobalPreview();
     try {
-        const response = await fetch(url);
+        const response = await fetch('samples/Snares/19/Snare-015.wav');
         const arrayBuffer = await response.arrayBuffer();
         const decodedBuffer = await audioContext.decodeAudioData(arrayBuffer);
         
