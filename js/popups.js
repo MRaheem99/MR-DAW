@@ -1057,7 +1057,7 @@ async function loadLibraryUI(libPopup, container, sampleList, onSelect) {
 
 async function loadLibrarySample(url, fileName, onSelect) {
     try {
-        const response = await fetch('./samples/Snares/19/Snare-015.wav');
+        const response = await fetch(url);
         const arrayBuffer = await response.arrayBuffer();
         const decodedBuffer = await audioContext.decodeAudioData(arrayBuffer);
         onSelect(decodedBuffer, fileName, url);
@@ -1070,7 +1070,7 @@ async function loadLibrarySample(url, fileName, onSelect) {
 async function previewLibraryFile(url) {
     stopGlobalPreview();
     try {
-        const response = await fetch('./samples/Snares/19/Snare-015.wav');
+        const response = await fetch(url);
         const arrayBuffer = await response.arrayBuffer();
         const decodedBuffer = await audioContext.decodeAudioData(arrayBuffer);
         
