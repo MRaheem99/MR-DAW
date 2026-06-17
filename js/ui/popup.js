@@ -1,7 +1,7 @@
 //popups.js
 let allpopups = {};
 function openPopup({ id = null, title, content, width = 'auto', height = 'auto', addClass = null, remex = null, onClose = () => {} }) {
-    const popupId = id; // || `popup-${title.toLowerCase().replace(/\s+/g, '-')}`;
+    const popupId = id;
     
     let existingPopup = document.getElementById(popupId);
     if (existingPopup) {
@@ -115,16 +115,6 @@ function createSmallInput(label, val) {
 }
 
 function makeDraggable(panel, handle, popup) {
-    
-    //popup.onclick = () => {
-    //    const popups = document.querySelectorAll('.popup');
-    //    popups.forEach(el => {
-    //        el.style.zIndex = '100'; 
-    //    });
-    //    popup.style.zIndex = '1000';
-    //}
-    //popup.style.zIndex = '1000';
-    
     let offsetX = 0, offsetY = 0;
 
     const onStart = (e) => {
