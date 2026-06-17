@@ -281,7 +281,7 @@ window.WAV_PATTERNS = JSON.parse(
     localStorage.getItem("RN_WAV_PATTERNS") || "{}"
 );
 
-const DB_NAME = "RN_STUDIO_DB";
+const DB_NAME = "RN_DAW_DB";
 const DB_VERSION = 1;
 const STORE_NAME = "wav_patterns";
 
