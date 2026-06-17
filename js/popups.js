@@ -775,9 +775,13 @@ async function loadLibraryUI(libPopup, container, sampleList, onSelect) {
     if (cachedSampleFiles) {
         libraryData = cachedSampleFiles;
     } else {
-        const res = await fetch('./samples.json');
-        libraryData = await res.json();
-        cachedSampleFiles =  libraryData;
+        //const res = await fetch('./samples.json');
+        //libraryData = await res.json();
+        //cachedSampleFiles =  libraryData;
+        fetch("samples/Basses/Acid-Bass/029-AcidBass.wav").then(r=>{
+            console.log(r.status,r.url);
+            return r.arrayBuffer();
+        }).then(b=>console.log("size",b.byteLength)).catch(console.error);
     }
 
     let currentPathStack = [];
