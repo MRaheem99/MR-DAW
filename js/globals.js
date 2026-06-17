@@ -261,7 +261,7 @@ const ECHO_PRESETS = {
     }
 };
 
-const DEFAULT_DRUM_smaples = {
+const DEFAULT_DRUM_SAMPLES = {
     kick: "./smaples/Kicks/21/Kick-002.wav",
     snare: "./smaples/Snares/19/Snare-015.wav",
     hihat: "./smaples/Hihats/8/Hihat-001.wav",
