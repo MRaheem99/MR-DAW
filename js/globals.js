@@ -302,7 +302,7 @@ function normalizePaths(obj){
 
 async function loadDrumPresets() {
     try {
-        const res = await fetch("./drumkits.json");
+        const res = await fetch('./drumkits.json?v='+Date.now());
         DRUM_PRESETS = await res.json();
     } catch (err) {
         console.error("Failed to load drum presets", err);
@@ -311,7 +311,7 @@ async function loadDrumPresets() {
 
 async function loadSampleBuffer(url) {
     const response = await fetch(url);
-   console.log("Loaded sample: " + url);
+    console.log("Loaded sample: " + url);
     const arrayBuffer = await response.arrayBuffer();
     return await audioContext.decodeAudioData(arrayBuffer);
 }
