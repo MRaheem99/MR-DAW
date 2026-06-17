@@ -141,7 +141,7 @@ window.isMagnetActive = false;
 window.audioLassoSelection = [];
 window.audioPasteTarget = null;
 window.audioInsertTarget = {time: null, trackIdx: null};
-window.loadedLibrarysamples = window.loadedLibrarysamples || {};
+window.loadedLibrarySamples = window.loadedLibrarySamples || {};
 
 let cpuMeter = {
     schedulerTime: 0,
